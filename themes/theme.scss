@@ -1,0 +1,731 @@
+html[accessable-theme="accessible"] {
+	.sbt-class-bar .sb-slider-pills-container .sb-pills-container .pill {
+	  color: #004594 !important;
+	}
+  
+	.sbt-class-bar .sb-slider-pills-container .sb-pills-container .pill.active,
+	.sbt-class-bar .sb-slider-pills-container .sb-pills-container .pill:hover {
+	  background: #004285 !important;
+	}
+  
+	.update.basic.label {
+	  color: #525252 !important;
+	}
+  
+	button.no-text-transform {
+	  color: #000000;
+	}
+  
+	.sb--card__meta1 > .data_2 {
+	  background-color: #bddcff !important;
+	  color: #003e85 !important;
+	}
+  
+	.certified-course__btn > .textbook__addbtn {
+	  color: #1a1a1a;
+	}
+  
+	.sb-btn-link-gray {
+	  color: #4b4b4b;
+	}
+  
+	.content-metadeta__title {
+	  color: #4b4b4b !important;
+	}
+  
+	// .sb-btn-normal {
+	// 	color:#F5F5F5 ;
+	// 	background-color:#A80011;
+	// }
+	.title.ng-star-inserted {
+	  color: #525252 !important;
+	}
+  
+	.sbt-welcome-theme-container {
+	  .sb-color-warning {
+		color: #8d3719 !important;
+	  }
+	}
+  
+	.sb-onboard {
+	  .multi-select-container .list-border .placeholder {
+		color: #525252 !important;
+	  }
+	}
+  
+	.overlay-sidebar__menu {
+	  .group__type {
+		color: #0c0c0c;
+	  }
+	}
+  
+	.signup-background {
+	  .year-birth {
+		.sb-color-red {
+		  color: #952833 !important;
+		}
+	  }
+  
+	  .infotext {
+		color: #9d1b1b !important;
+	  }
+  
+	  .sb-requirement-field span {
+		color: #9d1b1b !important;
+	  }
+  
+	  button.sb-btn.sb-btn-normal.w-100.sb-btn-disabled {
+		color: #383838 !important;
+	  }
+	}
+  
+	.sbt-mygroups-details {
+	  .sb--card__moreinfo {
+		.sb--card__org {
+		  color: #545454 !important;
+		}
+  
+		.sb--card__type {
+		  color: #080808 !important;
+		}
+	  }
+	}
+  
+	.sb-library-cards {
+	  .sb-members-list-item--horizontal {
+		.status {
+		  color: #046646 !important;
+		}
+	  }
+	}
+  
+	.sb-modal-content {
+	  .sb-form {
+		span.sb-color-warning {
+		  color: #813317 !important;
+		}
+	  }
+	}
+  
+	.profile-bg-c-3 {
+	  .update {
+		color: #595959 !important;
+	  }
+	}
+  
+	.sbt-sb-g {
+	  .header {
+		button.sb-btn.sb-btn-xs.sb-btn-secondary.ml-auto {
+		  color: #1a1a1a !important;
+		}
+	  }
+	}
+  
+	.sb-pageSection {
+	  .sb-pageSection-header {
+		.sb-pageSection-sentenceCase {
+		  .sb-pageSection-count {
+			background-color: #933310 !important;
+		  }
+		}
+  
+		button.sb-btn-secondary,
+		.sb-cls-btn {
+		  color: #1a1a1a;
+		}
+	  }
+	}
+  
+	.schooling-location {
+	  .multi-select-container .list-border .placeholder {
+		color: #525252 !important;
+	  }
+	}
+  
+	.select-template-content {
+	  .no-template-text {
+		color: #4a4a4a;
+  
+		b {
+		  color: #474747;
+		}
+	  }
+  
+	  .certificate-content {
+		.sb-field {
+		  .asterik {
+			color: #a30010;
+		  }
+  
+		  .sb-browse-btn {
+			color: #395470 !important;
+		  }
+		}
+	  }
+  
+	  .re-issue-content {
+		.certificate-id-info {
+		  color: #595959 !important;
+		}
+	  }
+  
+	  .three.wide.column.pl-0.pr-0 {
+		.sidebar.py-24 {
+		  color: #000000;
+		}
+	  }
+	}
+  
+	.cc-player__content-header {
+	  .certified-course {
+		.sb-btn-secondary {
+		  color: #1a1a1a !important;
+		}
+	  }
+	}
+  }
+  
+  html[device-accessable-theme="accessible"] {
+	.details-container {
+	  .grid-item {
+		padding-top: 16px !important;
+		padding-bottom: 16px !important;
+	  }
+	}
+  
+	app-application-header {
+	  .buttons-first-slot {
+		padding-top: 8px !important;
+		padding-bottom: 8px !important;
+	  }
+  
+	  .sb-hamburger-menu {
+		height: 48px !important;
+	  }
+  
+	  ion-button.button-clear {
+		height: 48px !important;
+	  }
+  
+	  .sb-hamburger-menu.sb-hamburger-icon {
+		height: 48px !important;
+  
+		.tool-icon {
+		  width: 32px !important;
+		}
+	  }
+  
+	  .ion-activatable.ion-focusable {
+		width: 48px !important;
+		height: 48px !important;
+	  }
+  
+	  .active-download-icon {
+		height: 48px !important;
+		width: 48px !important;
+	  }
+	}
+  
+	app-user-home {
+	  .change-btn {
+		.sb-btn-sm {
+		  height: 48px !important;
+		}
+	  }
+  
+	  .preference-container {
+		font-size: 16px;
+	  }
+  
+	  .preference-data img {
+		width: 48px;
+		height: 48px;
+		margin-left: 16px;
+	  }
+	}
+  
+	app-resources {
+	  sb-library-filters {
+		.pill {
+		  padding-top: 16px !important;
+		  padding-bottom: 16px !important;
+		}
+  
+		sb-library-filters {
+		  .rounded {
+			border-radius: 24px !important;
+		  }
+  
+		  .sb-explore-container {
+  
+			.explore-more-books,
+			.explore-more-content {
+			  height: 3.5rem !important;
+			}
+  
+		  }
+  
+		}
+  
+		#mediumScroll .pill {
+		  padding-top: 16px !important;
+		  padding-bottom: 16px !important;
+		  border-radius: 4px !important;
+		}
+  
+		#gradeScroll .pill {
+		  padding-top: 24px !important;
+		  padding-bottom: 24px !important;
+		  border-radius: 24px !important;
+		}
+	  }
+  
+	  .scrollable-container {
+		margin-top: 155px !important;
+	  }
+  
+	  .ui-container::after {
+		height: 210px !important;
+	  }
+  
+	  .explore-more-books,
+	  .explore-more-content {
+		height: 3.4rem !important;
+	  }
+	}
+  
+	.fixed-container {
+	  .sb-grade-pills-container {
+		.sb-slider-pills-container .sb-grade-pills-container .pill {
+		  padding-right: 2rem;
+		  padding-left: 2rem;
+		}
+	  }
+	}
+  
+	.app-application-header {
+	  .tool-icon {
+		width: 32px;
+	  }
+	}
+  
+	.change-role {
+	  color: #104c87 !important;
+	  padding-top: 16px !important;
+	  padding-bottom: 16px !important;
+	}
+  
+	app-profile {
+	  .contacts .email.light .value {
+		color: #595959 !important;
+	  }
+	  .trainings{
+		.ion-text-center{
+		  .txt-capitalize{
+			height: 3.5rem !important;
+		  }
+		}
+	  }
+	
+  
+	  .contacts .phone .value {
+		color: #595959 !important;
+	  }
+  
+	  .contacts .email {
+		padding: 9px 17px;
+	  }
+	}
+  
+	app-search {
+	  .search-bg {
+		.sb-label-grid.sb-pills-grid .item {
+		  padding: 1.7rem !important;
+		}
+	  }
+  
+	  .search-input {
+		button {
+		  width: 48px !important;
+		}
+	  }
+	}
+  
+	app-category-list-page {
+	  .ion-text-capitalize {
+		height: 48px !important;
+	  }
+  
+	  .ion-activatable.ion-focusable {
+		width: 100%;
+		height: 100%;
+	  }
+  
+	}
+  
+	sb-pills-grid {
+	  .sb-label-grid.sb-pills-grid .item {
+		height: 3.5rem !important;
+	  }
+	}
+  
+	sb-library-cards-stack {
+	  button.sbbtn.flat.stack-btn.full-width {
+		line-height: 2;
+	  }
+	}
+  
+	ion-card-content {
+	  .sign-in-btn {
+		button.button-native {
+		  height: 3.4rem !important;
+		}
+	  }
+	  ion-button.badge.md.button.button-outline{
+		color: white;
+		height: 3.5rem;
+	  }
+	}
+  
+	app-sign-in-card {
+	  .sign-in-block {
+		.button-block {
+		  height: 3.5rem;
+		}
+	  }
+	}
+	sb-dt-card-actions{
+	  .card-icons-red{
+		color: #B30909;
+	  }
+	}
+	app-consent-pii-popup{
+	  .btn-info button{
+		padding: 16px 16px !important;
+	  }
+	}
+  
+	app-downloads-tab {
+	  .sb-card-download-container {
+		color: #252525 !important;
+	  }
+  
+	  .sb-dw-manager {
+		.flex-50 {
+		  padding-top: 11px !important;
+		  padding-bottom: 11px !important;
+		}
+  
+	  }
+  
+	  .sb-card-actions .action-btn.delete {
+		color: #000000 !important;
+		padding: 17px !important;
+		height: auto !important;
+		border-radius: 24px !important;
+	  }
+	}
+  
+	app-resources {
+	  .sb-recenlty-viewed-title {
+		.view-all-p8 {
+		  padding: 16px !important;
+		  height: auto;
+		}
+	  }
+	}
+	app-profile{
+	  .trainings{
+		.refresh-icon{
+		  height: 48px !important;
+		  width: 48px !important;
+		}
+	  }
+	  .edit-options{
+		.custom-round{
+		  height: 3.5rem !important;
+		}
+	  }
+	  .school-details {
+		.custom-round{
+		  height: 3.5rem;
+		}
+  
+	  }
+	 .contacts {
+	  .email{
+		padding: 16px 24px !important;
+	  }
+	 .phone{
+	  padding: 16px 24px !important;
+	 }
+	 }
+	}
+	.flex-nowrap{
+	  .training-1{
+		.fw{
+		  height: 3.5rem;
+		}
+	  }
+	}
+	.bottom-block{
+	  .custom-round{
+		height: 3.5rem !important;
+	  }
+	}
+	sb-course-cards-hlist{
+	  .layout-course{
+		.sb-btn-white{
+		  padding: 16px !important;
+		  height: auto !important;
+		}
+	  }
+	}
+	.menu-section{
+	  .another-user-title{
+		padding: 16px 16px !important;
+	  }
+	}
+	.sb-recently-viewed-container{
+	  padding-bottom: 60px !important;
+	}
+	.sb-content-info-container{
+	  .sb-content-info-card{
+		.read-more{
+		  padding-top: 14px !important;
+	  padding-bottom: 14px !important;
+		}
+	  }
+	}
+	.sb-popover .sb-popover-footer .sb-popover-action-btn{
+	  height: 48px!important;
+	}
+	.content-share .share-desc{
+	  color: #515151 !important;
+	}
+	sb-library-card{
+	  .sb--card__main-area{
+		.menu::after{
+		  width: 3.5rem;
+		  height: 3.5rem;
+		  color: #000000;
+	  }
+		}
+	  }
+	  app-group-details{
+		.gd-member-search .gd-member-search-icon{
+		  top: 14px;
+		  left: 12px;
+		}
+		.gd-member-search input{
+		  padding: 12px 0px 12px 40px !important;
+		  height: auto !important;
+		}
+		.gd-page{
+		  .gd-member-search .gd-member-search-icon{
+			top: 14px !important;
+			left: 12px !important;
+		  }
+		}
+	 
+	  }
+	  app-activity-details{
+		.gd-member-search input{
+		  padding: 12px 0px 12px 40px !important;
+		  height: auto !important;
+		}
+		.gd-member-search .gd-member-search-icon{
+		  top: 29px !important;
+		  left: 21px !important;
+		}
+		.ad-member-container{
+		  .ad-timestamp-container span {
+			padding: 12px;
+			height: auto;
+		}
+		}
+	  }
+	  app-enrolled-course-details-page{
+		.card-content-bottom-0{
+		.segment-button-has-label-only{
+		  color: #024f9d !important;
+		}
+		}
+	  }
+	  app-license-card-component{
+		.card-content-md{
+		  .view-credits{
+			padding: 13px !important;
+		  }
+		}
+	  }
+	  sb-member-card{
+		.sb-members-list-item--medium .menu::after{
+		  width: 3.5rem;
+	  height: 3.5rem;
+		}
+		.sb-members-list-item .status{
+		  padding: 16px !important;
+		}
+  
+	  }
+	  app-detail-card{
+		.sb-grade-pills-container div{
+		  padding: 16px !important;
+		  height: 3.5rem !important;
+		}
+	  }
+	  .collection-etb-filter{
+		.sb-grade-pills-container div{
+		  padding: 16px !important;
+		  height: 3.5rem !important;
+		}
+	  }
+	  sb-toc-card{
+		.sbchapter__item{
+		  button.sbchapter__play__btn{
+			height: 3.5rem !important;
+		  }
+		}
+	  }
+	  .sb-content-info-card{
+		.read-more div{
+		  padding-top: 14px !important;
+	  padding-bottom: 14px !important;
+		}
+	  }
+	  .sb-popover-container{
+		.sb-popover-items{
+		  padding: 20px!important;
+		}
+	  }
+	  .sb-popover .sb-popover-title ion-icon{
+		.sb-modal-close{
+		  height: 48px!important;
+		  width: 60px!important;
+		}
+	  }
+	  .sb-dt-card-actions{
+		.card-icons-red {
+		  font-size: 30px;
+		  color: #B30909 !important;
+	  }
+	  }
+	  .sb-popover-items{
+		.popover-ratings{
+		  ion-buttons.sc-ion-buttons-md-h{
+			padding: 8px !important;
+		  }
+		.app-rate-btn-outline{
+		  height: 3.5rem !important;
+		}
+		.app-rate-btn{
+		  height: 3.5rem !important;
+		}
+		.sc-ion-buttons-md-h{
+		  ion-icon.md.hydrated{
+			color: #575757;
+		  }
+		}
+		.sc-ion-buttons-md-s .button-has-icon-only{
+		  height: 3.5rem !important;
+	  
+		}
+	  }
+	  }
+	  ion-footer ion-button{
+		height: 3.5rem!important;
+	  }
+	
+	  app-content-rating-alert{
+		.sc-ion-buttons-md-h{
+		  padding: 8px !important;
+		}
+		ion-icon.sb-modal-close{
+		  height: 48px!important;
+		}
+	  }
+	  .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info{
+		color: #515151 !important;
+	  }
+	  sb-multiple-dropdown{
+		.multi-select-section{
+		  .multi-select-container .list-border{
+			padding: 1.7rem !important;
+		  }
+		}
+	  }
+	  .footer{
+		.block-button-save{
+		  padding: 1rem !important;
+		}
+	  }
+	  app-about-us{
+		ion-button.md.button.button-clear.ion-activatable.ion-focusable{
+		  width: 48px !important;
+		  height: 48px !important;
+		  ion-icon.md.hydrated{
+			height: 48px;
+		  }
+		}
+  
+	  }
+	  .sb-card-download-container .sb-card .img-container{
+		margin: 20px 0 !important;
+	  }
+	  app-data-sync{
+		.can-go-back{
+		  ion-button{
+			height: 3.5rem !important;
+		  }
+		}
+		ion-button.button-clear{
+		  height: 3.5rem !important;
+		}
+		ion-button.MT16.md.button.button-block{
+		  height: 3.5rem;
+		}
+  
+	  }
+	  .changePermissionAccess {
+		.permission-container{
+		  .permission-toggle{
+			padding: 0.6rem !important;
+		  }
+		}
+	   
+	  }
+	  app-sb-share-popup{
+		.popover-viewport {
+		  height: 48px!important;
+		}
+	  }
+	  app-about-us{
+		ion-label.sc-ion-label-md-h h2 {
+		  padding-top: 5px !important;
+		  padding-bottom: 5px !important;
+	  }
+	  .toolbar-title-default{
+		ion-button.button.button-clear {
+		  width: 48px !important;
+		  height: 48px !important;
+	  }
+	  }
+	  }
+	  sb-course-card{
+		.sb--card--course{
+		  span.data_1.sb__ellipsis.sb__ellipsis--two{
+			color: #575757 !important;
+		  }
+		}
+	  }
+	  app-sub-profile-edit{
+		ion-footer ion-button{
+		  height: 48px !important;
+		}
+		input.native-input.sc-ion-input-md{
+		  height: 3.5rem !important;
+		}
+	  }
+  }
+  
