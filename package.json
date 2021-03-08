@@ -1,0 +1,15 @@
+{
+  "name": "sb-theme",
+  "version": "1.0.24",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sunbird-Ed/sb-themes.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
