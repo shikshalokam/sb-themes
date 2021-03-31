@@ -1,0 +1,1040 @@
+
+
+html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
+
+  --app-primary: #ffd92a;
+  --app-primary-medium: #007AFF;
+  --app-primary-light: #C6E7FF;
+  --app-primary-background: #000000;
+  --app-primary-header: #555555;
+  --app-primary-header-light: #777777;
+  --app-secondary-background: #333;
+  --app-tertiary: #6236FF;
+  --app-tertiary-light: #E0E1FD;
+
+  --joyful-light-yellow: #F9FFBE; // take it out
+  --joyful-light-blue: #DAECFF; // take it out
+
+  --app-white: #000000;
+  --app-black: #ffffff; // remove
+  --app-dark-gray: #222222;
+  --app-gray: #fff;
+  --app-medium-gray: #666666;
+  --app-light-gray: #999999;
+  --app-lighter-gray: #cccccc;
+
+  --app-brown: #4F2C0D;
+  --app-green: #008840;
+  --app-light-green: #BFE1CF; // take it out
+  --app-pink: #EF64AF;
+
+  --app-shadow: rgba(0, 0, 0, 0.1);
+  --button-style-shadow: 5px 5px 2px 0 var(--app-shadow);
+  --block-style-shadow: 0 2px 7px 0 var(--app-shadow);
+
+  //cc
+  --cc-accordion-panel-br: #333;
+  --cc-accordion-panel-bg: #222222;
+  --cc-accordion-panel-header-bg: #333333;
+  --cc-accordion-panel-header-br: #333;
+  --cc-accordion-panel-header-title: var(--app-primary);
+  --cc-progress-circle-stroke: var(--secondary-200);
+  --cc-sbcard-meta1: var(--rc-979797);
+  --cc-sbcard-metaC-data: var(--rc-FAFAFA);
+  --cc-sbcard-course-curi-title: var(--white);
+  --cc-sbcard-img-label: #284C3F;
+  --cc-sbcard-img-label-bg: #B3EBD7;
+  --cc-sbcard-img-badge-bg: var(--black);
+  --cc-sbcard-img-badge-text: var(--white);
+  --cc-sblabel-badge-br: var(--secondary-color);
+  --cc-sblabel-badge-text: var(--secondary-color);
+  --sb-pill-bg: #222222;
+  --cc-pill-border: var(--secondary-color);
+  --cc-pill-text: var(--secondary-color);
+  --cc-pill-bg-hover: var(--secondary-color);
+  --cc-pill-text-hover: var(--black);
+  --cc-grade-pill-container-bg: #333333;
+  --cc-grade-pill-text: var(--white);
+  --cc-grade-pill-bg-hover: var(--app-primary);
+  --cc-grade-pill-text-hover: #222222;
+  --cc-grade-pill-svg-fill: #222222;
+  --cc-sbcard-data1-2-text: var(--app-primary);
+  --cd-sbcard-data1-2-text: var(--app-primary); //later delete
+  --cc-sbcard-bg: #222222;
+  --cc-sbcard-img-container-bg: var(--gray-100);
+  --cc-sbcard-title: #ffffff;
+  --cc-sbcard-meta-text: var(--app-primary);
+  --cc-sbcard-dot-divider: var(--gray-200);
+  --cc-sbcard-moreinfo-bg: #222222;
+  --cc-sbcard-moreinfo-bordertop: #cacbce;
+  --cc-sbcard-meta2-text: var(--gray-800);
+  --cc-sbcard-org-text: var(--gray-200);
+  --cc-sbcard-type-text: var(--white);
+  --cc-sbcard-rv-img-container-bg: var(--gray-100);
+  --cc-sbcard-selected-border: var(--primary-color);
+  --cc-sbcard-img-br: var(--white);
+  --cc-sbcard-offline-bg: var(--tertiary-color);
+  --cc-sbcard-offline-img-text: var(--white);
+  --cc-sbcard-card__progressbar-bg: var(--gray-100);
+  --cc-sbcard-card__progressbar-span-bg: var(--secondary-200);
+  --cc-sbcard-type-br: var(--black);
+  --cc-sbcard-hover-text: var(--white);
+  --cc-sbcard-hover-bg: var(--primary-color);
+  --cc-sbcard-org-text: var(--balck);
+  --cc-sbcard-data1-bg: #444444;
+  --cc-sbcard-data1-bg-active: #ffeb2a;
+  --sbt-pill-hs: 212, 100%;
+  --cc-sbcard-data2-bg: #444444;
+  --cc-sbcard-data2-bg-active: #ffeb2a;
+  --cc-sbcard-type-bg: var(--black);
+  --cc-sbcard-type-text: var(--white);
+
+  // cc pills box
+  --cc-pills-grid-item: #333333;
+  --cc-pills-grid-item-hover: #222;
+  --cc-pills-grid-item-img-bg: #222;
+  --cc-pills-grid-icon-head-img-bg: #222;
+  --cc-viewbtn-border: #94CCF5;
+  --cc-viewbtn-text: #0076FE;
+  --cc-viewbtn-hover: var(--white);
+
+  //member card
+  --cc-members-list-item-selected: var(--black);
+  --cc-members-list-item-selected-border: var(--primary-color);
+  --cc-members-list-item-menu-text: var(--gray-200);
+  --cc-members-list-item-status-text: var(--secondary-200);
+  --cc-members-list-item-status-br: var(--secondary-200);
+  --cc-members-list-item-status-bg: #ffd92a;
+
+  // notification
+  --cc-notification-list-bg: #222222;
+  --cc-notification-list-br: #111111;
+  --cc-notification-status-bg: var(--white);
+  --cc-notification-date-text: var(--white);
+  --cc-notification-logo-bg: var(--gray-0);
+  --cc-notification-title-text: var(--gray-400);
+  --cc-notification-title-active: var(--primary-color);
+  --cc-notification-subtitle-text: var(--white);
+
+  // toc 
+  --cc-toc-card-item-bg: #333333;
+  --cc-toc-card-item-hover: var(--app-primary);
+  --cc-toc-card-item-br: #222222;
+  --cc-toc-card-item-bs: var(--rc-rgba-primary);
+  --cc-toc-card-item-img-bg: var(--rc-dddddd);
+  --cc-toc-card-item-title: #ffffff;
+  --cc-toc-card-item-title-hover: #333333;
+  --cc-toc-card-item-score-text: #3F19C3;
+
+  //toc item
+  --cc-chapter-br: var(--gray-100);
+  --cc-chapter-bg: #222222;
+  --cc-chapter-title: var(--gray-800);
+  --cc-chapter-item-bg: varvar(--white);
+  --cc-chapter-item-bs: var(--rc-rgba-primary);
+  --cc-chapter-item-br: var(--rc-rgba-primary);
+  --cc-chapter-item-title-text: var(--primary-400);
+  --cc-chapter-item-open-br: #e0e0e0;
+  --cc-chapter-item-open-title-text: var(--primary-400);
+  --cc-chapter-item-topic-title-text: var(--primary-400);
+  --cc-chapter-item-topic-title-text-active: var(--primary-100);
+  --cc-chapter-item-topic-title-text-hover: var(--gray-0);
+
+  //toc curriculum
+  --cc-curriculum-br-bg: var(--white);
+  --cc-curriculum-bg: var(--white);
+  --cc-curriculum-br: var(--primary-200);
+  --cc-curriculum-active-bs: var(--rc-009D53);
+  --cc-curriculum-title-text: #3A3A3A;
+
+  //faq
+  --cc-faq-yesbtn-text: var(--secondary-color);
+  --cc-faq-helpheader-text: var(--white);
+  --cc-faq-helpheader-bg: var(--primary-color);
+  --cc-faq-panel-title-text: var(--primary-color);
+  --cc-faq-info-msg-bg: var(--primary-0);
+  --cc-faq-panelheader-bg: var(--white);
+  --cc-faq-panel-body-bg: #222222;
+  --cc-faq-panel-interact-bg: #222222;
+  --cc-faq-yesbtn-bg: inherit;
+  --cc-faq-yesbtn-text: #000000;
+
+  //layout
+  --cc-lb-card-hlist-title: var(--black);
+  --cc-lb-card-grid-title: var(--white);
+  --cc-badge-bg: #222222;
+  --cc-badge-text: #ffffff;
+  --cc-lb-card-stack-title: var(--primary-color);
+  --cc-lb-card-stack-btn-bg: var(--primary-100);
+  --cc-lb-card-stack-btn-text: var(--primary-color);
+
+  //.sb-popover .sb-popover-footer,
+  .ui-container::after,
+  .toolbar-background,
+  .sb-popover.sb-popover-permissions .sb-popover-items,
+  sb-form sb-multiple-dropdown .sb-modal,
+  .multi-select-container .sb-modal .footer,
+  .sb-side-menu .side-menu-footer,app-guest-profile .signin-card-bg {
+    background: #000000 !important;
+  }
+
+
+  .ui-container::part(scroll),
+  .ion-padding.ion-no-border,
+  .footer,
+  .header-info,
+  app-profile-settings .ps-container .qr-container,
+  ion-header,
+  ion-toolbar,
+  .toolbar-background,
+  .toolbar-container,
+  .container-focus,
+  ion-tab-bar,
+  .sb-card-container .sb-card,
+  .sb-card-active,ion-card,app-guest-profile .details-container,.profile-info,.sb-label-grid.show-icon.sb-box-grid.icon-header .item,.sb-popover .sb-popover-footer,.sb-chapter-dd {
+    --app-primary-header: #333;
+    background: var(--app-primary-header) !important;
+  }
+
+  #background-content {
+    --background: #000;
+    background: var(--background) !important;
+
+    .inner-scroll.scroll-y {
+      background: var(--background) !important;
+    }
+  }
+
+  .qr-board::after,
+  .form-position ion-item,
+  .sb-switch-new-experience-popup .popover-content,
+  .preference-container,
+  .help-header,
+  .help-header-send-email,
+  .sb-view-all-container .sb-view-all-items, .sb-label-grid.icon-header .item .img,.sb-slider-pills-container .sb-pills-container .pill {
+    background: #222222 !important;
+  }
+
+  ion-tabs ion-tab-button:nth-child(3) ion-icon {
+    background: var(--app-black);
+    background-image: url(/assets/imgs/ic_qr_scanner.svg);
+    background-size: 46px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .language-card label,
+  .card-container {
+    background-color: #222222;
+    color: #fff;
+    box-shadow: 0 20px 40px -10px #000000;
+  }
+
+  .select-box.select-alert .alert-wrapper,
+  .ftue-changes.select-alert .alert-wrapper {
+    background-color: #000;
+  }
+
+  img.arrow-icon,
+  .qr-content .qr-img,
+  .loading-spinner.sc-ion-loading-md,
+  .loading-wrapper.ion-overlay-wrapper.sc-ion-loading-md,
+  .multi-select-container .caret-down svg,
+  .language-card.selected-lang img.icon-check,
+  .tool-icon,
+  .preference-data img,
+  .sb-label-grid.show-icon.sb-pills-grid.hscroll.show-bradius.two-rows-grid.column-sequence.size--md.show-ellipsis--two,
+  ion-tabs ion-tab-button.tab-selected ion-icon,
+  ion-tabs ion-tab-button:not(.tab-selected) ion-icon,
+  .sb-dt-card .sb-dt-card-actions .sb-btn-tile-group .sb-btn-tile,
+  .panel-heading .panel-title img,
+  .search-input img,
+  img[alt="sorting"],
+  .filter-icon,.profile-icon img,.sb-label-grid.icon-header .item .img img {
+    filter: invert(1);
+  }
+//.sb-label-grid.show-ellipsis--two .item label
+  p.app-title.ion-text-center,
+  .title-class {
+    color: var(--app-primary);
+  }
+
+  .select-text.select-placeholder,
+  .panel-title-blue,.sb-legal-url {
+    color: var(--app-primary) !important;
+  }
+
+  .select-icon .select-icon-inner {
+    border-color: var(--app-primary) !important;
+  }
+
+  ion-item ion-select {
+    border-bottom: 0px solid var(--app-light-gray) !important;
+  }
+
+
+  ion-item ion-select .select-text,
+  .sb-popover .sb-popover-header .sb-popover-toolbar .sb-popover-title,
+  .sb-card-view-all-container .sb-card .sb-card-actions .action-btn.delete,
+  .sb-card-download-container .sb-card .sb-card-actions .action-btn.delete,.sign-in-card-text {
+    color: #ffffff !important;
+  }
+  
+  .ion-text-center.ion-padding.ion-text-wrap,
+  .gray-color,
+  .card-title,
+  .fill-in-style .fill-in-head,
+  .fill-in-style .fill-in-content,
+  .qr-instruction-container .qr-instruction .sub-title,
+  .select-box .alert-title,
+  .alert-checkbox-label.sc-ion-alert-md,
+  [aria-checked=true].sc-ion-alert-md .alert-radio-label.sc-ion-alert-md,
+  .sb-popover .sb-popover-title,
+  .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title,
+  sb-multiple-dropdown .multi-select-section div span,
+  .chng-theme-text,
+  selected-lang .language-selection,
+  .select-box.select-alert .alert-wrapper,
+  .ftue-changes.select-alert .alert-wrapper,
+  .ftue-changes .alert-title,
+  .alert-radio-label.sc-ion-alert-md,
+  .multi-select-container .header,
+  sb-course-cards-hlist .title,
+  sb-library-cards-stack .title,
+  .preference-container,
+  .filter-style,
+  .container-focus h3,
+  .sb--card.sb--card--theme2 .sb--card__info .data_4,
+  .sb-label-grid .item,
+  .sb-content-info-card .sb-content-info-heading,
+  .sb-content-info-card .sb-content-title-data,
+  .sb-content-info-card .sb-info,
+  app-faq-help .info-msg,
+  .panel-heading .panel-title,
+  .panel-interact>p,
+  .setting-label,
+  .sc-ion-label-ios-s>p,
+  ion-item.ion-text-wrap.item.md.in-list.ion-focusable.hydrated.item-label *,
+  ion-item.item.ios.in-list.ion-focusable.item-label *,
+  .permission-container .item-row .title,
+  .permission-container .item-row .description,
+  .search-info .description,
+  .search-info .title,
+  .native-input.sc-ion-input-md,
+  .sb-dw-manager .selector,
+  .sb-card-container .sb-card .sb-card-details .title,
+  .sb-card-container .sb-card .sb-card-details .info,.hydrated, .button-clear,.sb-dt-card .sb-dt-content .left .sb-dt-source .sb-by,.content-header-info, .section-title,.details-container .text-align,ion-card-header, .sign-in-card-text,.sb-label-grid.sb-pills-grid.two-rows-grid,.sb-chapter-dd,app-collection-detail-etb .collection-etb-filter .sb-slider-pills-container .sb-pills-container .pill {
+    color: #ffffff !important;
+  }
+
+  sb-multiple-dropdown .multi-select-section div span.checkmark {
+    border: 1px solid #ffffff;
+  }
+
+  .container input:checked~.checkmark {
+    background-color: var(--app-primary);
+
+    &::after {
+      border: solid var(--black);
+    }
+  }
+
+  .item-label-stacked.item-select-disabled ion-label {
+    opacity: 0.65;
+  }
+
+  ion-item ion-select .select-text.select-placeholder {
+    color: #cccccc !important;
+  }
+
+  .preference-info,ion-button {
+    color: #000000 !important;
+  }
+  .ion-color-primary svg.ionicon.s-ion-icon path {
+    fill:var(--app-primary);
+  }
+  .card-container.selected {
+    border: 3px solid var(--app-primary);
+  }
+
+  .alert-radio-group.sc-ion-alert-md,
+  .alert-checkbox-group.sc-ion-alert-md {
+    border-top: 1px solid var(--ion-color-step-150, #333);
+    border-bottom: 1px solid var(--ion-color-step-150, #333);
+  }
+
+  [aria-checked=true].sc-ion-alert-md .alert-checkbox-inner.sc-ion-alert-md {
+    border-color: #000;
+  }
+
+  .sb-popover.sb-popover-permissions .sb-popover-footer .popover-button-cancel,
+  button.block-button-clear.blur-clear-btn,
+  .cancel_info,
+  app-district-mapping .block-button-clear,
+  .panel-interact>button.btn {
+    background-color: transparent;
+    --background: var(--app-primary);
+    border: 1px solid var(--app-primary);
+    color: var(--app-primary) !important;
+  }
+
+  .sb-popover.sb-popover-permissions .sb-popover-footer .popover-button-allow,
+  button.block-button-save.blur-save-btn,
+  .letsgo-info,
+  .block-button-save,
+  .panel-interact>button.yesBtn,
+  .sb-popover .sb-popover-footer .sb-popover-action-btn.popover-color {
+    border: 1px solid var(--app-primary);
+    background-color: var(--app-primary) !important;
+  }
+
+  .section-header-style,
+  .sb-textbook-container .sb-textbook-items .sb-textbook-title-container .textbook-title,
+  .sb-dt-title,
+  .sb-content-info-container .sb-content-info-items .sb-content-info-title,
+  .read-more,.view-credits span {
+    color: var(--app-primary) !important;
+  }
+
+  ion-item {
+    --background: #333333 !important;
+  }
+
+  .spinner-lines.sc-ion-loading-md,
+  .spinner-lines-small.sc-ion-loading-md,
+  .spinner-bubbles.sc-ion-loading-md,
+  .spinner-circles.sc-ion-loading-md,
+  .spinner-crescent.sc-ion-loading-md,
+  .spinner-dots.sc-ion-loading-md {
+    color: var(--app-primary);
+  }
+
+  .sb-slider-pills-container .sb-grade-pills-container .pill:active,
+  .sb-slider-pills-container .sb-grade-pills-container .pill.active {
+    background-color: var(--app-primary);
+  }
+
+  .letsgo-info,
+  .cancel_info {
+    font-size: 0.875rem;
+    padding: 12px 0;
+  }
+
+  ion-icon {
+    color: var(--app-primary);
+  }
+
+  sb-label-grid.show-icon.sb-box-grid.icon-header {
+    .item {
+      background-color: #333;
+
+      img {
+        background: #222;
+      }
+
+      label {
+        color: #fff;
+      }
+
+      sb-icon-img {
+        filter: invert(1);
+      }
+    }
+  }
+
+  .new-feature-badge .circle-badge {
+    border: 1px solid #333;
+    background-color: #333;
+  }
+
+  app-application-header .side-menu-footer {
+    border-radius: 0 0 0 0;
+    background: #222 !important;
+  }
+
+  app-application-header .sb-menu-list {
+    padding: 0;
+    margin: 0;
+    border-radius: 0 !important;
+  }
+
+  .sb-menu-list>ion-item {
+    padding: 0.03125rem 0;
+  }
+
+  .ion-page.can-go-back ion-list ion-item * {
+    color: #fff;
+  }
+
+  .panel-body {
+    background-color: #222;
+    color: #fff;
+  }
+
+  .icon-arrow-up svg.icon-svg--primary {
+    fill: var(--app-primary);
+  }
+
+  app-guest-profile .profile-info {
+        margin-top: 0px !important;
+  }
+
+  ion-item.ge-item-16.item.md.ion-activatable.ion-focusable.hydrated.item-label.item-label-stacked.item-interactive.item-select.item-has-placeholder.ion-untouched.ion-pristine.ion-valid {
+    width:100%;
+    margin-left:0px !important;
+  }
+app-collection-detail-etb .textbook-accordian .sbchapter__play__btn {
+  color: #fff !important;
+  border-color: var(--app-primary);
+  background: #333;
+  .icon-svg--primary {
+    fill: var(--white);
+  }
+}
+
+}
+
+
+html[device-accessable-theme="accessible"] {
+  .details-container {
+    .grid-item {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    }
+  }
+  
+  app-application-header {
+    .buttons-first-slot {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    }
+  
+    .sb-hamburger-menu {
+    height: 48px !important;
+    }
+  
+    ion-button.button-clear {
+    height: 48px !important;
+    }
+  
+    .sb-hamburger-menu.sb-hamburger-icon {
+    height: 48px !important;
+  
+    .tool-icon {
+      width: 32px !important;
+    }
+    }
+  
+    .ion-activatable.ion-focusable {
+    width: 48px !important;
+    height: 48px !important;
+    }
+  
+    .active-download-icon {
+    height: 48px !important;
+    width: 48px !important;
+    }
+  }
+  
+  app-user-home {
+    .change-btn {
+    .sb-btn-sm {
+      height: 48px !important;
+    }
+    }
+  
+    .preference-container {
+    font-size: 16px;
+    }
+  
+    .preference-data img {
+    width: 48px;
+    height: 48px;
+    margin-left: 16px;
+    }
+  }
+  
+  app-resources {
+    sb-library-filters {
+    .pill {
+      padding-top: 16px !important;
+      padding-bottom: 16px !important;
+    }
+  
+    sb-library-filters {
+      .rounded {
+      border-radius: 24px !important;
+      }
+  
+      .sb-explore-container {
+  
+      .explore-more-books,
+      .explore-more-content {
+        height: 3.5rem !important;
+      }
+  
+      }
+  
+    }
+  
+    #mediumScroll .pill {
+      padding-top: 16px !important;
+      padding-bottom: 16px !important;
+      border-radius: 4px !important;
+    }
+  
+    #gradeScroll .pill {
+      padding-top: 24px !important;
+      padding-bottom: 24px !important;
+      border-radius: 24px !important;
+    }
+    }
+  
+    .scrollable-container {
+    margin-top: 155px !important;
+    }
+  
+    .ui-container::after {
+    height: 210px !important;
+    }
+  
+    .explore-more-books,
+    .explore-more-content {
+    height: 3.4rem !important;
+    }
+  }
+  
+  .fixed-container {
+    .sb-grade-pills-container {
+    .sb-slider-pills-container .sb-grade-pills-container .pill {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+    }
+  }
+  
+  .app-application-header {
+    .tool-icon {
+    width: 32px;
+    }
+  }
+  
+  .change-role {
+    color: #104c87 !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+  
+  app-profile {
+    .contacts .email.light .value {
+    color: #595959 !important;
+    }
+    .trainings{
+    .ion-text-center{
+      .txt-capitalize{
+      height: 3.5rem !important;
+      }
+    }
+    }
+  
+  
+    .contacts .phone .value {
+    color: #595959 !important;
+    }
+  
+    .contacts .email {
+    padding: 9px 17px;
+    }
+  }
+  
+  app-search {
+    .search-bg {
+    .sb-label-grid.sb-pills-grid .item {
+      padding: 1.7rem !important;
+    }
+    }
+  
+    .search-input {
+    button {
+      width: 48px !important;
+    }
+    }
+  }
+  
+  app-category-list-page {
+    .ion-text-capitalize {
+    height: 48px !important;
+    }
+  
+    .ion-activatable.ion-focusable {
+    width: 100%;
+    height: 100%;
+    }
+  
+  }
+  
+  sb-pills-grid {
+    .sb-label-grid.sb-pills-grid .item {
+    height: 3.5rem !important;
+    }
+  }
+  
+  sb-library-cards-stack {
+    button.sbbtn.flat.stack-btn.full-width {
+    line-height: 2;
+    }
+  }
+  
+  ion-card-content {
+    .sign-in-btn {
+    button.button-native {
+      height: 3.4rem !important;
+    }
+    }
+    ion-button.badge.md.button.button-outline{
+    color: white;
+    height: 3.5rem;
+    }
+  }
+  
+  app-sign-in-card {
+    .sign-in-block {
+    .button-block {
+      height: 3.5rem;
+    }
+    }
+  }
+  sb-dt-card-actions{
+    .card-icons-red{
+    color: #B30909;
+    }
+  }
+  app-consent-pii-popup{
+    .btn-info button{
+    padding: 16px 16px !important;
+    }
+  }
+  
+  app-downloads-tab {
+    .sb-card-download-container {
+    color: #252525 !important;
+    }
+  
+    .sb-dw-manager {
+    .flex-50 {
+      padding-top: 11px !important;
+      padding-bottom: 11px !important;
+    }
+  
+    }
+  
+    .sb-card-actions .action-btn.delete {
+    color: #000000 !important;
+    padding: 17px !important;
+    height: auto !important;
+    border-radius: 24px !important;
+    }
+  }
+  
+  app-resources {
+    .sb-recenlty-viewed-title {
+    .view-all-p8 {
+      padding: 16px !important;
+      height: auto;
+    }
+    }
+  }
+  app-profile{
+    .trainings{
+    .refresh-icon{
+      height: 48px !important;
+      width: 48px !important;
+    }
+    }
+    .edit-options{
+    .custom-round{
+      height: 3.5rem !important;
+    }
+    }
+    .school-details {
+    .custom-round{
+      height: 3.5rem;
+    }
+  
+    }
+   .contacts {
+    .email{
+    padding: 16px 24px !important;
+    }
+   .phone{
+    padding: 16px 24px !important;
+   }
+   }
+  }
+  .flex-nowrap{
+    .training-1{
+    .fw{
+      height: 3.5rem;
+    }
+    }
+  }
+  .bottom-block{
+    .custom-round{
+    height: 3.5rem !important;
+    }
+  }
+  sb-course-cards-hlist{
+    .layout-course{
+    .sb-btn-white{
+      padding: 16px !important;
+      height: auto !important;
+    }
+    }
+  }
+  .menu-section{
+    .another-user-title{
+    padding: 16px 16px !important;
+    }
+  }
+  .sb-recently-viewed-container{
+    padding-bottom: 60px !important;
+  }
+  .sb-content-info-container{
+    .sb-content-info-card{
+    .read-more{
+      padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    }
+    }
+  }
+  .sb-popover .sb-popover-footer .sb-popover-action-btn{
+    height: 48px!important;
+  }
+  .content-share .share-desc{
+    color: #515151 !important;
+  }
+  sb-library-card{
+    .sb--card__main-area{
+    .menu::after{
+      width: 3.5rem;
+      height: 3.5rem;
+      color: #000000;
+    }
+    }
+    }
+    app-group-details{
+    .gd-member-search .gd-member-search-icon{
+      top: 14px;
+      left: 12px;
+    }
+    .gd-member-search input{
+      padding: 12px 0px 12px 40px !important;
+      height: auto !important;
+    }
+    .gd-page{
+      .gd-member-search .gd-member-search-icon{
+      top: 14px !important;
+      left: 12px !important;
+      }
+    }
+   
+    }
+    app-activity-details{
+    .gd-member-search input{
+      padding: 12px 0px 12px 40px !important;
+      height: auto !important;
+    }
+    .gd-member-search .gd-member-search-icon{
+      top: 29px !important;
+      left: 21px !important;
+    }
+    .ad-member-container{
+      .ad-timestamp-container span {
+      padding: 12px;
+      height: auto;
+    }
+    }
+    }
+    app-enrolled-course-details-page{
+    .card-content-bottom-0{
+    .segment-button-has-label-only{
+      color: #024f9d !important;
+    }
+    }
+    }
+    app-license-card-component{
+    .card-content-md{
+      .view-credits{
+      padding: 13px !important;
+      }
+    }
+    }
+    sb-member-card{
+    .sb-members-list-item--medium .menu::after{
+      width: 3.5rem;
+    height: 3.5rem;
+    }
+    .sb-members-list-item .status{
+      padding: 16px !important;
+    }
+  
+    }
+    app-detail-card{
+    .sb-grade-pills-container div{
+      padding: 16px !important;
+      height: 3.5rem !important;
+    }
+    }
+    .collection-etb-filter{
+    .sb-grade-pills-container div{
+      padding: 16px !important;
+      height: 3.5rem !important;
+    }
+    }
+    sb-toc-card{
+    .sbchapter__item{
+      button.sbchapter__play__btn{
+      height: 3.5rem !important;
+      }
+    }
+    }
+    .sb-content-info-card{
+    .read-more div{
+      padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    }
+    }
+    .sb-popover-container{
+    .sb-popover-items{
+      padding: 20px!important;
+    }
+    }
+    .sb-popover .sb-popover-title ion-icon{
+    .sb-modal-close{
+      height: 48px!important;
+      width: 60px!important;
+    }
+    }
+    .sb-dt-card-actions{
+    .card-icons-red {
+      font-size: 30px;
+      color: #B30909 !important;
+    }
+    }
+    .sb-popover-items{
+    .popover-ratings{
+      ion-buttons.sc-ion-buttons-md-h{
+      padding: 8px !important;
+      }
+    .app-rate-btn-outline{
+      height: 3.5rem !important;
+    }
+    .app-rate-btn{
+      height: 3.5rem !important;
+    }
+    .sc-ion-buttons-md-h{
+      ion-icon.md.hydrated{
+      color: #575757;
+      }
+    }
+    .sc-ion-buttons-md-s .button-has-icon-only{
+      height: 3.5rem !important;
+    
+    }
+    }
+    }
+    ion-footer ion-button{
+    height: 3.5rem!important;
+    }
+  
+    app-content-rating-alert{
+    .sc-ion-buttons-md-h{
+      padding: 8px !important;
+    }
+    ion-icon.sb-modal-close{
+      height: 48px!important;
+    }
+    }
+    .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info{
+    color: #515151 !important;
+    }
+    sb-multiple-dropdown{
+    .multi-select-section{
+      .multi-select-container .list-border{
+      padding: 1.7rem !important;
+      }
+    }
+    }
+    .footer{
+    .block-button-save{
+      padding: 1rem !important;
+    }
+    }
+    app-about-us{
+    ion-button.md.button.button-clear.ion-activatable.ion-focusable{
+      width: 48px !important;
+      height: 48px !important;
+      ion-icon.md.hydrated{
+      height: 48px;
+      }
+    }
+  
+    }
+    .sb-card-download-container .sb-card .img-container{
+    margin: 20px 0 !important;
+    }
+    app-data-sync{
+    .can-go-back{
+      ion-button{
+      height: 3.5rem !important;
+      }
+    }
+    ion-button.button-clear{
+      height: 3.5rem !important;
+    }
+    ion-button.MT16.md.button.button-block{
+      height: 3.5rem;
+    }
+  
+    }
+    .changePermissionAccess {
+    .permission-container{
+      .permission-toggle{
+      padding: 0.6rem !important;
+      }
+    }
+     
+    }
+    app-sb-share-popup{
+    .popover-viewport {
+      height: 48px!important;
+    }
+    }
+    app-about-us{
+    ion-label.sc-ion-label-md-h h2 {
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+    }
+    .toolbar-title-default{
+    ion-button.button.button-clear {
+      width: 48px !important;
+      height: 48px !important;
+    }
+    }
+    }
+    sb-course-card{
+    .sb--card--course{
+      span.data_1.sb__ellipsis.sb__ellipsis--two{
+      color: #575757 !important;
+      }
+    }
+    }
+    app-sub-profile-edit{
+    ion-footer ion-button{
+      height: 48px !important;
+    }
+    input.native-input.sc-ion-input-md{
+      height: 3.5rem !important;
+    }
+    }
+  }
