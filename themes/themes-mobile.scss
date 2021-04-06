@@ -1,19 +1,16 @@
-
-
 html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
-
   --app-primary: #ffd92a;
-  --app-primary-medium: #007AFF;
-  --app-primary-light: #C6E7FF;
+  --app-primary-medium: #007aff;
+  --app-primary-light: #c6e7ff;
   --app-primary-background: #000000;
   --app-primary-header: #555555;
   --app-primary-header-light: #777777;
   --app-secondary-background: #333;
-  --app-tertiary: #6236FF;
-  --app-tertiary-light: #E0E1FD;
+  --app-tertiary: #6236ff;
+  --app-tertiary-light: #e0e1fd;
 
-  --joyful-light-yellow: #F9FFBE; // take it out
-  --joyful-light-blue: #DAECFF; // take it out
+  --joyful-light-yellow: #f9ffbe; // take it out
+  --joyful-light-blue: #daecff; // take it out
 
   --app-white: #000000;
   --app-black: #ffffff; // remove
@@ -23,10 +20,10 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   --app-light-gray: #999999;
   --app-lighter-gray: #cccccc;
 
-  --app-brown: #4F2C0D;
+  --app-brown: #4f2c0d;
   --app-green: #008840;
-  --app-light-green: #BFE1CF; // take it out
-  --app-pink: #EF64AF;
+  --app-light-green: #bfe1cf; // take it out
+  --app-pink: #ef64af;
 
   --app-shadow: rgba(0, 0, 0, 0.1);
   --button-style-shadow: 5px 5px 2px 0 var(--app-shadow);
@@ -42,8 +39,8 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   --cc-sbcard-meta1: var(--rc-979797);
   --cc-sbcard-metaC-data: var(--rc-FAFAFA);
   --cc-sbcard-course-curi-title: var(--white);
-  --cc-sbcard-img-label: #284C3F;
-  --cc-sbcard-img-label-bg: #B3EBD7;
+  --cc-sbcard-img-label: #284c3f;
+  --cc-sbcard-img-label-bg: #b3ebd7;
   --cc-sbcard-img-badge-bg: var(--black);
   --cc-sbcard-img-badge-text: var(--white);
   --cc-sblabel-badge-br: var(--secondary-color);
@@ -94,8 +91,8 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   --cc-pills-grid-item-hover: #222;
   --cc-pills-grid-item-img-bg: #222;
   --cc-pills-grid-icon-head-img-bg: #222;
-  --cc-viewbtn-border: #94CCF5;
-  --cc-viewbtn-text: #0076FE;
+  --cc-viewbtn-border: #94ccf5;
+  --cc-viewbtn-text: #0076fe;
   --cc-viewbtn-hover: var(--white);
 
   //member card
@@ -116,7 +113,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   --cc-notification-title-active: var(--primary-color);
   --cc-notification-subtitle-text: var(--white);
 
-  // toc 
+  // toc
   --cc-toc-card-item-bg: #333333;
   --cc-toc-card-item-hover: var(--app-primary);
   --cc-toc-card-item-br: #222222;
@@ -124,7 +121,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   --cc-toc-card-item-img-bg: var(--rc-dddddd);
   --cc-toc-card-item-title: #ffffff;
   --cc-toc-card-item-title-hover: #333333;
-  --cc-toc-card-item-score-text: #3F19C3;
+  --cc-toc-card-item-score-text: #3f19c3;
 
   //toc item
   --cc-chapter-br: var(--gray-100);
@@ -145,7 +142,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   --cc-curriculum-bg: var(--white);
   --cc-curriculum-br: var(--primary-200);
   --cc-curriculum-active-bs: var(--rc-009D53);
-  --cc-curriculum-title-text: #3A3A3A;
+  --cc-curriculum-title-text: #3a3a3a;
 
   //faq
   --cc-faq-yesbtn-text: var(--secondary-color);
@@ -174,10 +171,10 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .sb-popover.sb-popover-permissions .sb-popover-items,
   sb-form sb-multiple-dropdown .sb-modal,
   .multi-select-container .sb-modal .footer,
-  .sb-side-menu .side-menu-footer,app-guest-profile .signin-card-bg {
+  .sb-side-menu .side-menu-footer,
+  app-guest-profile .signin-card-bg {
     background: #000000 !important;
   }
-
 
   .ui-container::part(scroll),
   .ion-padding.ion-no-border,
@@ -191,7 +188,13 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .container-focus,
   ion-tab-bar,
   .sb-card-container .sb-card,
-  .sb-card-active,ion-card,app-guest-profile .details-container,.profile-info,.sb-label-grid.show-icon.sb-box-grid.icon-header .item,.sb-popover .sb-popover-footer,.sb-chapter-dd {
+  .sb-card-active,
+  ion-card,
+  app-guest-profile .details-container,
+  .profile-info,
+  .sb-label-grid.show-icon.sb-box-grid.icon-header .item,
+  .sb-popover .sb-popover-footer,
+  .sb-chapter-dd {
     --app-primary-header: #333;
     background: var(--app-primary-header) !important;
   }
@@ -211,7 +214,9 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .preference-container,
   .help-header,
   .help-header-send-email,
-  .sb-view-all-container .sb-view-all-items, .sb-label-grid.icon-header .item .img,.sb-slider-pills-container .sb-pills-container .pill {
+  .sb-view-all-container .sb-view-all-items,
+  .sb-label-grid.icon-header .item .img,
+  .sb-slider-pills-container .sb-pills-container .pill {
     background: #222222 !important;
   }
 
@@ -250,17 +255,20 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .panel-heading .panel-title img,
   .search-input img,
   img[alt="sorting"],
-  .filter-icon,.profile-icon img,.sb-label-grid.icon-header .item .img img {
+  .filter-icon,
+  .profile-icon img,
+  .sb-label-grid.icon-header .item .img img {
     filter: invert(1);
   }
-//.sb-label-grid.show-ellipsis--two .item label
+  //.sb-label-grid.show-ellipsis--two .item label
   p.app-title.ion-text-center,
   .title-class {
     color: var(--app-primary);
   }
 
   .select-text.select-placeholder,
-  .panel-title-blue,.sb-legal-url {
+  .panel-title-blue,
+  .sb-legal-url {
     color: var(--app-primary) !important;
   }
 
@@ -272,14 +280,14 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     border-bottom: 0px solid var(--app-light-gray) !important;
   }
 
-
   ion-item ion-select .select-text,
   .sb-popover .sb-popover-header .sb-popover-toolbar .sb-popover-title,
   .sb-card-view-all-container .sb-card .sb-card-actions .action-btn.delete,
-  .sb-card-download-container .sb-card .sb-card-actions .action-btn.delete,.sign-in-card-text {
+  .sb-card-download-container .sb-card .sb-card-actions .action-btn.delete,
+  .sign-in-card-text {
     color: #ffffff !important;
   }
-  
+
   .ion-text-center.ion-padding.ion-text-wrap,
   .gray-color,
   .card-title,
@@ -288,9 +296,13 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .qr-instruction-container .qr-instruction .sub-title,
   .select-box .alert-title,
   .alert-checkbox-label.sc-ion-alert-md,
-  [aria-checked=true].sc-ion-alert-md .alert-radio-label.sc-ion-alert-md,
+  [aria-checked="true"].sc-ion-alert-md .alert-radio-label.sc-ion-alert-md,
   .sb-popover .sb-popover-title,
-  .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title,
+  .sb-popover
+    .sb-popover-container
+    .sb-popover-items
+    .sb-popover-content-details
+    .main-title,
   sb-multiple-dropdown .multi-select-section div span,
   .chng-theme-text,
   selected-lang .language-selection,
@@ -311,9 +323,9 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .sb-content-info-card .sb-info,
   app-faq-help .info-msg,
   .panel-heading .panel-title,
-  .panel-interact>p,
+  .panel-interact > p,
   .setting-label,
-  .sc-ion-label-ios-s>p,
+  .sc-ion-label-ios-s > p,
   ion-item.ion-text-wrap.item.md.in-list.ion-focusable.hydrated.item-label *,
   ion-item.item.ios.in-list.ion-focusable.item-label *,
   .permission-container .item-row .title,
@@ -323,7 +335,22 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .native-input.sc-ion-input-md,
   .sb-dw-manager .selector,
   .sb-card-container .sb-card .sb-card-details .title,
-  .sb-card-container .sb-card .sb-card-details .info,.hydrated, .button-clear,.sb-dt-card .sb-dt-content .left .sb-dt-source .sb-by,.content-header-info, .section-title,.details-container .text-align,ion-card-header, .sign-in-card-text,.sb-label-grid.sb-pills-grid.two-rows-grid,.sb-chapter-dd,app-collection-detail-etb .collection-etb-filter .sb-slider-pills-container .sb-pills-container .pill {
+  .sb-card-container .sb-card .sb-card-details .info,
+  .hydrated,
+  .button-clear,
+  .sb-dt-card .sb-dt-content .left .sb-dt-source .sb-by,
+  .content-header-info,
+  .section-title,
+  .details-container .text-align,
+  ion-card-header,
+  .sign-in-card-text,
+  .sb-label-grid.sb-pills-grid.two-rows-grid,
+  .sb-chapter-dd,
+  app-collection-detail-etb
+    .collection-etb-filter
+    .sb-slider-pills-container
+    .sb-pills-container
+    .pill {
     color: #ffffff !important;
   }
 
@@ -331,7 +358,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     border: 1px solid #ffffff;
   }
 
-  .container input:checked~.checkmark {
+  .container input:checked ~ .checkmark {
     background-color: var(--app-primary);
 
     &::after {
@@ -347,11 +374,12 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     color: #cccccc !important;
   }
 
-  .preference-info,ion-button {
+  .preference-info,
+  ion-button {
     color: #000000 !important;
   }
   .ion-color-primary svg.ionicon.s-ion-icon path {
-    fill:var(--app-primary);
+    fill: var(--app-primary);
   }
   .card-container.selected {
     border: 3px solid var(--app-primary);
@@ -363,7 +391,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     border-bottom: 1px solid var(--ion-color-step-150, #333);
   }
 
-  [aria-checked=true].sc-ion-alert-md .alert-checkbox-inner.sc-ion-alert-md {
+  [aria-checked="true"].sc-ion-alert-md .alert-checkbox-inner.sc-ion-alert-md {
     border-color: #000;
   }
 
@@ -371,7 +399,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   button.block-button-clear.blur-clear-btn,
   .cancel_info,
   app-district-mapping .block-button-clear,
-  .panel-interact>button.btn {
+  .panel-interact > button.btn {
     background-color: transparent;
     --background: var(--app-primary);
     border: 1px solid var(--app-primary);
@@ -382,17 +410,21 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   button.block-button-save.blur-save-btn,
   .letsgo-info,
   .block-button-save,
-  .panel-interact>button.yesBtn,
+  .panel-interact > button.yesBtn,
   .sb-popover .sb-popover-footer .sb-popover-action-btn.popover-color {
     border: 1px solid var(--app-primary);
     background-color: var(--app-primary) !important;
   }
 
   .section-header-style,
-  .sb-textbook-container .sb-textbook-items .sb-textbook-title-container .textbook-title,
+  .sb-textbook-container
+    .sb-textbook-items
+    .sb-textbook-title-container
+    .textbook-title,
   .sb-dt-title,
   .sb-content-info-container .sb-content-info-items .sb-content-info-title,
-  .read-more,.view-credits span {
+  .read-more,
+  .view-credits span {
     color: var(--app-primary) !important;
   }
 
@@ -458,7 +490,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     border-radius: 0 !important;
   }
 
-  .sb-menu-list>ion-item {
+  .sb-menu-list > ion-item {
     padding: 0.03125rem 0;
   }
 
@@ -476,565 +508,707 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   }
 
   app-guest-profile .profile-info {
-        margin-top: 0px !important;
+    margin-top: 0px !important;
   }
 
   ion-item.ge-item-16.item.md.ion-activatable.ion-focusable.hydrated.item-label.item-label-stacked.item-interactive.item-select.item-has-placeholder.ion-untouched.ion-pristine.ion-valid {
-    width:100%;
-    margin-left:0px !important;
+    width: 100%;
+    margin-left: 0px !important;
   }
-app-collection-detail-etb .textbook-accordian .sbchapter__play__btn {
-  color: #fff !important;
-  border-color: var(--app-primary);
-  background: #333;
-  .icon-svg--primary {
-    fill: var(--white);
+  app-collection-detail-etb .textbook-accordian .sbchapter__play__btn {
+    color: #fff !important;
+    border-color: var(--app-primary);
+    background: #333;
+    .icon-svg--primary {
+      fill: var(--white);
+    }
   }
 }
 
-}
-
-
-html[device-accessable-theme="accessible"] {
+html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
+  --app-light-gray: #595959 !important;
+  --color-checked: #004dd1 !important;
   .details-container {
     .grid-item {
-    padding-top: 16px !important;
-    padding-bottom: 16px !important;
+      padding-top: 16px !important;
+      padding-bottom: 16px !important;
     }
   }
-  
+
   app-application-header {
     .buttons-first-slot {
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
     }
-  
+
     .sb-hamburger-menu {
-    height: 48px !important;
-    }
-  
-    ion-button.button-clear {
-    height: 48px !important;
-    }
-  
-    .sb-hamburger-menu.sb-hamburger-icon {
-    height: 48px !important;
-  
-    .tool-icon {
-      width: 32px !important;
-    }
-    }
-  
-    .ion-activatable.ion-focusable {
-    width: 48px !important;
-    height: 48px !important;
-    }
-  
-    .active-download-icon {
-    height: 48px !important;
-    width: 48px !important;
-    }
-  }
-  
-  app-user-home {
-    .change-btn {
-    .sb-btn-sm {
       height: 48px !important;
     }
+
+    ion-button.button-clear {
+      height: 48px !important;
     }
-  
-    .preference-container {
-    font-size: 16px;
+
+    .sb-hamburger-menu.sb-hamburger-icon {
+      height: 48px !important;
+
+      .tool-icon {
+        width: 32px !important;
+      }
     }
-  
-    .preference-data img {
-    width: 48px;
-    height: 48px;
-    margin-left: 16px;
+
+    .ion-activatable.ion-focusable {
+      width: 48px !important;
+      height: 48px !important;
+    }
+
+    .active-download-icon {
+      height: 48px !important;
+      width: 48px !important;
     }
   }
-  
+
+  app-user-home {
+    .change-btn {
+      .sb-btn-sm {
+        height: 48px !important;
+      }
+    }
+
+    .preference-container {
+      font-size: 16px;
+    }
+
+    .preference-data img {
+      width: 48px;
+      height: 48px;
+      margin-left: 16px;
+    }
+  }
+
   app-resources {
     sb-library-filters {
-    .pill {
-      padding-top: 16px !important;
-      padding-bottom: 16px !important;
-    }
-  
-    sb-library-filters {
-      .rounded {
-      border-radius: 24px !important;
+      .pill {
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
       }
-  
-      .sb-explore-container {
-  
-      .explore-more-books,
-      .explore-more-content {
-        height: 3.5rem !important;
+
+      sb-library-filters {
+        .rounded {
+          border-radius: 24px !important;
+        }
+
+        .sb-explore-container {
+          .explore-more-books,
+          .explore-more-content {
+            height: 3.5rem !important;
+          }
+        }
       }
-  
+
+      #mediumScroll .pill {
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+        border-radius: 4px !important;
       }
-  
+
+      #gradeScroll .pill {
+        padding-top: 24px !important;
+        padding-bottom: 24px !important;
+        border-radius: 24px !important;
+      }
     }
-  
-    #mediumScroll .pill {
-      padding-top: 16px !important;
-      padding-bottom: 16px !important;
-      border-radius: 4px !important;
-    }
-  
-    #gradeScroll .pill {
-      padding-top: 24px !important;
-      padding-bottom: 24px !important;
-      border-radius: 24px !important;
-    }
-    }
-  
+
     .scrollable-container {
-    margin-top: 155px !important;
+      margin-top: 155px !important;
     }
-  
+
     .ui-container::after {
-    height: 210px !important;
+      height: 210px !important;
     }
-  
+
     .explore-more-books,
     .explore-more-content {
-    height: 3.4rem !important;
+      height: 3.4rem !important;
     }
   }
-  
+
   .fixed-container {
     .sb-grade-pills-container {
-    .sb-slider-pills-container .sb-grade-pills-container .pill {
-      padding-right: 2rem;
-      padding-left: 2rem;
-    }
+      .sb-slider-pills-container .sb-grade-pills-container .pill {
+        padding-right: 2rem;
+        padding-left: 2rem;
+      }
     }
   }
-  
+
   .app-application-header {
     .tool-icon {
-    width: 32px;
+      width: 32px;
     }
   }
-  
+
   .change-role {
     color: #104c87 !important;
     padding-top: 16px !important;
     padding-bottom: 16px !important;
   }
-  
+
   app-profile {
     .contacts .email.light .value {
-    color: #595959 !important;
+      color: #595959 !important;
     }
-    .trainings{
-    .ion-text-center{
-      .txt-capitalize{
-      height: 3.5rem !important;
+    .trainings {
+      .ion-text-center {
+        .txt-capitalize {
+          height: 3.5rem !important;
+        }
       }
     }
-    }
-  
-  
+
     .contacts .phone .value {
-    color: #595959 !important;
+      color: #595959 !important;
     }
-  
+
     .contacts .email {
-    padding: 9px 17px;
+      padding: 9px 17px;
     }
   }
-  
+
   app-search {
     .search-bg {
-    .sb-label-grid.sb-pills-grid .item {
-      padding: 1.7rem !important;
+      .sb-label-grid.sb-pills-grid .item {
+        padding: 1.7rem !important;
+      }
     }
-    }
-  
+
     .search-input {
-    button {
-      width: 48px !important;
-    }
+      button {
+        width: 48px !important;
+      }
     }
   }
-  
+
   app-category-list-page {
     .ion-text-capitalize {
-    height: 48px !important;
+      height: 48px !important;
     }
-  
+
     .ion-activatable.ion-focusable {
-    width: 100%;
-    height: 100%;
+      width: 100%;
+      height: 100%;
     }
-  
   }
-  
+
   sb-pills-grid {
     .sb-label-grid.sb-pills-grid .item {
-    height: 3.5rem !important;
-    }
-  }
-  
-  sb-library-cards-stack {
-    button.sbbtn.flat.stack-btn.full-width {
-    line-height: 2;
-    }
-  }
-  
-  ion-card-content {
-    .sign-in-btn {
-    button.button-native {
-      height: 3.4rem !important;
-    }
-    }
-    ion-button.badge.md.button.button-outline{
-    color: white;
-    height: 3.5rem;
-    }
-  }
-  
-  app-sign-in-card {
-    .sign-in-block {
-    .button-block {
-      height: 3.5rem;
-    }
-    }
-  }
-  sb-dt-card-actions{
-    .card-icons-red{
-    color: #B30909;
-    }
-  }
-  app-consent-pii-popup{
-    .btn-info button{
-    padding: 16px 16px !important;
-    }
-  }
-  
-  app-downloads-tab {
-    .sb-card-download-container {
-    color: #252525 !important;
-    }
-  
-    .sb-dw-manager {
-    .flex-50 {
-      padding-top: 11px !important;
-      padding-bottom: 11px !important;
-    }
-  
-    }
-  
-    .sb-card-actions .action-btn.delete {
-    color: #000000 !important;
-    padding: 17px !important;
-    height: auto !important;
-    border-radius: 24px !important;
-    }
-  }
-  
-  app-resources {
-    .sb-recenlty-viewed-title {
-    .view-all-p8 {
-      padding: 16px !important;
-      height: auto;
-    }
-    }
-  }
-  app-profile{
-    .trainings{
-    .refresh-icon{
-      height: 48px !important;
-      width: 48px !important;
-    }
-    }
-    .edit-options{
-    .custom-round{
       height: 3.5rem !important;
     }
+  }
+
+  sb-library-cards-stack {
+    button.sbbtn.flat.stack-btn.full-width {
+      line-height: 2;
+    }
+  }
+
+  ion-card-content {
+    .sign-in-btn {
+      button.button-native {
+        height: 3.4rem !important;
+      }
+    }
+    ion-button.badge.md.button.button-outline {
+      color: white;
+      height: 3.5rem;
+    }
+  }
+
+  app-sign-in-card {
+    .sign-in-block {
+      .button-block {
+        height: 3.5rem;
+      }
+    }
+  }
+  sb-dt-card-actions {
+    .card-icons-red {
+      color: #b30909;
+    }
+  }
+  app-consent-pii-popup {
+    .btn-info button {
+      padding: 16px 16px !important;
+    }
+  }
+
+  app-downloads-tab {
+    .sb-card-download-container {
+      color: #252525 !important;
+    }
+
+    .sb-dw-manager {
+      .flex-50 {
+        padding-top: 11px !important;
+        padding-bottom: 11px !important;
+      }
+    }
+
+    .sb-card-actions .action-btn.delete {
+      color: #000000 !important;
+      padding: 17px !important;
+      height: auto !important;
+      border-radius: 24px !important;
+    }
+  }
+
+  app-resources {
+    .sb-recenlty-viewed-title {
+      .view-all-p8 {
+        padding: 16px !important;
+        height: auto;
+      }
+    }
+  }
+  app-profile {
+    .trainings {
+      .refresh-icon {
+        height: 48px !important;
+        width: 48px !important;
+      }
+    }
+    .edit-options {
+      .custom-round {
+        height: 3.5rem !important;
+      }
     }
     .school-details {
-    .custom-round{
-      height: 3.5rem;
+      .custom-round {
+        height: 3.5rem;
+      }
     }
-  
-    }
-   .contacts {
-    .email{
-    padding: 16px 24px !important;
-    }
-   .phone{
-    padding: 16px 24px !important;
-   }
-   }
-  }
-  .flex-nowrap{
-    .training-1{
-    .fw{
-      height: 3.5rem;
-    }
+    .contacts {
+      .email {
+        padding: 16px 24px !important;
+      }
+      .phone {
+        padding: 16px 24px !important;
+      }
     }
   }
-  .bottom-block{
-    .custom-round{
-    height: 3.5rem !important;
+  .flex-nowrap {
+    .training-1 {
+      .fw {
+        height: 3.5rem;
+      }
     }
   }
-  sb-course-cards-hlist{
-    .layout-course{
-    .sb-btn-white{
-      padding: 16px !important;
-      height: auto !important;
-    }
+  .bottom-block {
+    .custom-round {
+      height: 3.5rem !important;
     }
   }
-  .menu-section{
-    .another-user-title{
-    padding: 16px 16px !important;
+  sb-course-cards-hlist {
+    .layout-course {
+      .sb-btn-white {
+        padding: 16px !important;
+        height: auto !important;
+      }
     }
   }
-  .sb-recently-viewed-container{
+  .menu-section {
+    .another-user-title {
+      padding: 16px 16px !important;
+    }
+  }
+  .sb-recently-viewed-container {
     padding-bottom: 60px !important;
   }
-  .sb-content-info-container{
-    .sb-content-info-card{
-    .read-more{
-      padding-top: 14px !important;
-    padding-bottom: 14px !important;
-    }
+  .sb-content-info-container {
+    .sb-content-info-card {
+      .read-more {
+        padding-top: 14px !important;
+        padding-bottom: 14px !important;
+      }
     }
   }
-  .sb-popover .sb-popover-footer .sb-popover-action-btn{
-    height: 48px!important;
-  }
-  .content-share .share-desc{
+  .content-share .share-desc {
     color: #515151 !important;
   }
-  sb-library-card{
-    .sb--card__main-area{
-    .menu::after{
-      width: 3.5rem;
-      height: 3.5rem;
-      color: #000000;
+  sb-library-card {
+    .sb--card__main-area {
+      .menu::after {
+        width: 3.5rem;
+        height: 3.5rem;
+        color: #000000;
+      }
     }
-    }
-    }
-    app-group-details{
-    .gd-member-search .gd-member-search-icon{
+  }
+  app-group-details {
+    .gd-member-search .gd-member-search-icon {
       top: 14px;
       left: 12px;
     }
-    .gd-member-search input{
+    .gd-member-search input {
       padding: 12px 0px 12px 40px !important;
       height: auto !important;
     }
-    .gd-page{
-      .gd-member-search .gd-member-search-icon{
-      top: 14px !important;
-      left: 12px !important;
+    .gd-page {
+      .gd-member-search .gd-member-search-icon {
+        top: 14px !important;
+        left: 12px !important;
       }
     }
-   
-    }
-    app-activity-details{
-    .gd-member-search input{
+  }
+  app-activity-details {
+    .gd-member-search input {
       padding: 12px 0px 12px 40px !important;
       height: auto !important;
     }
-    .gd-member-search .gd-member-search-icon{
+    .gd-member-search .gd-member-search-icon {
       top: 29px !important;
       left: 21px !important;
     }
-    .ad-member-container{
+    .ad-member-container {
       .ad-timestamp-container span {
-      padding: 12px;
-      height: auto;
-    }
-    }
-    }
-    app-enrolled-course-details-page{
-    .card-content-bottom-0{
-    .segment-button-has-label-only{
-      color: #024f9d !important;
-    }
-    }
-    }
-    app-license-card-component{
-    .card-content-md{
-      .view-credits{
-      padding: 13px !important;
+        padding: 12px;
+        height: auto;
       }
     }
+  }
+  app-enrolled-course-details-page {
+    .card-content-bottom-0 {
+      .segment-button-has-label-only {
+        color: var(--color-checked);
+      }
     }
-    sb-member-card{
-    .sb-members-list-item--medium .menu::after{
+  }
+  app-license-card-component {
+    .card-content-md {
+      .view-credits {
+        padding: 13px !important;
+      }
+    }
+  }
+  sb-member-card {
+    .sb-members-list-item--medium .menu::after {
       width: 3.5rem;
-    height: 3.5rem;
-    }
-    .sb-members-list-item .status{
-      padding: 16px !important;
-    }
-  
-    }
-    app-detail-card{
-    .sb-grade-pills-container div{
-      padding: 16px !important;
-      height: 3.5rem !important;
-    }
-    }
-    .collection-etb-filter{
-    .sb-grade-pills-container div{
-      padding: 16px !important;
-      height: 3.5rem !important;
-    }
-    }
-    sb-toc-card{
-    .sbchapter__item{
-      button.sbchapter__play__btn{
-      height: 3.5rem !important;
-      }
-    }
-    }
-    .sb-content-info-card{
-    .read-more div{
-      padding-top: 14px !important;
-    padding-bottom: 14px !important;
-    }
-    }
-    .sb-popover-container{
-    .sb-popover-items{
-      padding: 20px!important;
-    }
-    }
-    .sb-popover .sb-popover-title ion-icon{
-    .sb-modal-close{
-      height: 48px!important;
-      width: 60px!important;
-    }
-    }
-    .sb-dt-card-actions{
-    .card-icons-red {
-      font-size: 30px;
-      color: #B30909 !important;
-    }
-    }
-    .sb-popover-items{
-    .popover-ratings{
-      ion-buttons.sc-ion-buttons-md-h{
-      padding: 8px !important;
-      }
-    .app-rate-btn-outline{
-      height: 3.5rem !important;
-    }
-    .app-rate-btn{
-      height: 3.5rem !important;
-    }
-    .sc-ion-buttons-md-h{
-      ion-icon.md.hydrated{
-      color: #575757;
-      }
-    }
-    .sc-ion-buttons-md-s .button-has-icon-only{
-      height: 3.5rem !important;
-    
-    }
-    }
-    }
-    ion-footer ion-button{
-    height: 3.5rem!important;
-    }
-  
-    app-content-rating-alert{
-    .sc-ion-buttons-md-h{
-      padding: 8px !important;
-    }
-    ion-icon.sb-modal-close{
-      height: 48px!important;
-    }
-    }
-    .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info{
-    color: #515151 !important;
-    }
-    sb-multiple-dropdown{
-    .multi-select-section{
-      .multi-select-container .list-border{
-      padding: 1.7rem !important;
-      }
-    }
-    }
-    .footer{
-    .block-button-save{
-      padding: 1rem !important;
-    }
-    }
-    app-about-us{
-    ion-button.md.button.button-clear.ion-activatable.ion-focusable{
-      width: 48px !important;
-      height: 48px !important;
-      ion-icon.md.hydrated{
-      height: 48px;
-      }
-    }
-  
-    }
-    .sb-card-download-container .sb-card .img-container{
-    margin: 20px 0 !important;
-    }
-    app-data-sync{
-    .can-go-back{
-      ion-button{
-      height: 3.5rem !important;
-      }
-    }
-    ion-button.button-clear{
-      height: 3.5rem !important;
-    }
-    ion-button.MT16.md.button.button-block{
       height: 3.5rem;
     }
-  
+    .sb-members-list-item .status {
+      padding: 16px !important;
     }
-    .changePermissionAccess {
-    .permission-container{
-      .permission-toggle{
-      padding: 0.6rem !important;
+  }
+  app-detail-card {
+    .sb-grade-pills-container div {
+      padding: 16px !important;
+      height: 3.5rem !important;
+    }
+  }
+  .collection-etb-filter {
+    .sb-grade-pills-container div {
+      padding: 16px !important;
+      height: 3.5rem !important;
+    }
+  }
+  sb-toc-card {
+    .sbchapter__item {
+      button.sbchapter__play__btn {
+        height: 3.5rem !important;
       }
     }
-     
+  }
+  .sb-content-info-card {
+    .read-more div {
+      padding-top: 14px !important;
+      padding-bottom: 14px !important;
     }
-    app-sb-share-popup{
+  }
+
+  .sb-popover .sb-popover-title ion-icon {
+    .sb-modal-close {
+      height: 48px !important;
+      width: 60px !important;
+    }
+  }
+  .sb-dt-card-actions {
+    .card-icons-red {
+      font-size: 30px;
+      color: #b30909 !important;
+    }
+  }
+  .sb-popover-items {
+    .popover-ratings {
+      ion-buttons.sc-ion-buttons-md-h {
+        padding: 8px !important;
+      }
+      .app-rate-btn-outline {
+        height: 3.5rem !important;
+      }
+      .app-rate-btn {
+        height: 3.5rem !important;
+      }
+      .sc-ion-buttons-md-h {
+        ion-icon.md.hydrated {
+          color: #575757;
+        }
+      }
+      .sc-ion-buttons-md-s .button-has-icon-only {
+        height: 3.5rem !important;
+      }
+    }
+  }
+  ion-footer ion-button {
+    height: 3.5rem !important;
+  }
+
+  app-content-rating-alert {
+    ion-icon.sb-modal-close {
+      height: 48px !important;
+    }
+  }
+  .sb-popover
+    .sb-popover-container
+    .sb-popover-items
+    .sb-popover-content-details
+    .main-title
+    .meta-info {
+    color: #515151 !important;
+  }
+  //   sb-multiple-dropdown{
+  // 	.multi-select-section{
+  // 	  .multi-select-container .list-border{
+  // 		padding: 1.7rem !important;
+  // 	  }
+  // 	}
+  //   }
+  .footer {
+    .block-button-save {
+      padding: 1rem !important;
+    }
+  }
+  app-about-us {
+    ion-button.md.button.button-clear.ion-activatable.ion-focusable {
+      width: 48px !important;
+      height: 48px !important;
+      ion-icon.md.hydrated {
+        height: 48px;
+      }
+    }
+  }
+  .sb-card-download-container .sb-card .img-container {
+    margin: 20px 0 !important;
+  }
+  app-data-sync {
+    .can-go-back {
+      ion-button {
+        height: 3.5rem !important;
+      }
+    }
+    ion-button.button-clear {
+      height: 3.5rem !important;
+    }
+    ion-button.MT16.md.button.button-block {
+      height: 3.5rem;
+    }
+  }
+  .changePermissionAccess {
+    .permission-container {
+      .permission-toggle {
+        padding: 0.6rem !important;
+      }
+    }
+  }
+  app-sb-share-popup {
     .popover-viewport {
-      height: 48px!important;
+      height: 48px !important;
     }
-    }
-    app-about-us{
+  }
+  app-about-us {
     ion-label.sc-ion-label-md-h h2 {
       padding-top: 5px !important;
       padding-bottom: 5px !important;
     }
-    .toolbar-title-default{
-    ion-button.button.button-clear {
-      width: 48px !important;
-      height: 48px !important;
-    }
-    }
-    }
-    sb-course-card{
-    .sb--card--course{
-      span.data_1.sb__ellipsis.sb__ellipsis--two{
-      color: #575757 !important;
+    .toolbar-title-default {
+      ion-button.button.button-clear {
+        width: 48px !important;
+        height: 48px !important;
       }
     }
-    }
-    app-sub-profile-edit{
-    ion-footer ion-button{
-      height: 48px !important;
-    }
-    input.native-input.sc-ion-input-md{
-      height: 3.5rem !important;
-    }
+  }
+  sb-course-card {
+    .sb--card--course {
+      span.data_1.sb__ellipsis.sb__ellipsis--two {
+        color: #575757 !important;
+      }
     }
   }
+  app-sub-profile-edit {
+    ion-footer ion-button {
+      height: 48px !important;
+    }
+    input.native-input.sc-ion-input-md {
+      height: 3.5rem !important;
+    }
+  }
+  sb-pills-grid .sb-view-more-less .view-all {
+    height: 3rem !important;
+  }
+  app-search {
+    .search-container .search-input {
+      input.native-input.sc-ion-input-md {
+        height: 3rem !important;
+      }
+    }
+  }
+  page-language-settings {
+    .continue {
+      height: 3rem !important;
+    }
+  }
+  page-user-type-selection {
+    .back-btn-container .top-back-button {
+      width: 48px !important;
+      height: 3rem !important;
+      top: -14px !important;
+      left: initial !important;
+    }
+  }
+  app-profile-settings {
+    .back-btn-container .top-back-button {
+      width: 48px !important;
+    }
+    .qr-container {
+      .sb-btn {
+        height: 3rem !important;
+      }
+    }
+
+    .sb-btn {
+      height: 3rem !important;
+    }
+  }
+  .form-position .select-icon {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  .form-position .item-label-stacked ion-select {
+    height: 3rem !important;
+  }
+  app-profile-settings .title {
+    color: #024f9d !important ;
+  }
+  .ftue-changes .alert-button-group .alert-button {
+    height: 3rem !important;
+  }
+  .select-box.select-alert .alert-button-group .alert-button {
+    height: 3rem !important;
+  }
+  app-new-experience-popup {
+    .close-icon-info {
+      width: 3rem !important;
+      height: 3rem !important;
+      padding: 13px !important;
+    }
+    .cancel_info {
+      height: 3rem !important;
+    }
+  }
+  // .sb-switch-new-experience-popup .popover-content{
+  //   height: 31rem!important;
+  // }
+  .tutorial-popover .popover-wrapper {
+    img.close-icon {
+      width: 48px;
+      height: 48px;
+    }
+    .main-content {
+      .close-icon {
+        top: -23px;
+        right: -23px;
+      }
+    }
+  }
+  .sb-popover .sb-popover-title ion-icon {
+    height: 48px !important;
+  }
+  .sb-popover .sb-popover-footer .sb-popover-action-btn {
+    height: 48px !important;
+  }
+  .content-share .share-desc {
+    height: 48px;
+    top: auto;
+  }
+  // .profile-head .profile-symbol{
+  //   width: 48px;
+  //   height: 48px;
+  // }
+  // .profile-head .profile-symbol{
+  //   top: -15px !important;
+  // }
+  // .profile-head .profile-symbol .information-icon-style{
+  //   padding: 14px;
+  //   right: 32px;
+  //   top: -28px;
+  //   position: relative;
+  // }
+  ion-button.explore-more-books {
+    height: 3rem;
+  }
+  ion-button.explore-more-content {
+    height: 3rem;
+  }
+  .content-share .share-info ion-icon {
+    color: #525252;
+  }
+  app-guest-edit ion-item ion-select {
+    height: 3rem;
+  }
+  app-guest-edit input.native-input.sc-ion-input-md {
+    height: 3rem;
+  }
+  app-guest-edit ion-label.type-label {
+    color: #595959;
+  }
+  app-guest-edit .sb-btn {
+    height: 3rem;
+  }
+  app-downloads-tab .sb-dw-manager .flex-50 {
+    height: 3.5rem;
+  }
+  //  .school-recent span.isymbol ion-icon.information-icon-style{
+  //   padding: 14px;
+  //     left: 0px;
+  //     right: 12px;
+  //     top: auto;
+  //     position: relative;
+  // }
+  // .profile-share-icon .share-icon{
+  //   top: 18px;
+  //   margin-left: 8px;
+  //   padding: 14px;
+  // }
+  app-profile .roles-container ion-button.button-clear {
+    height: 3rem;
+  }
+  ion-card-content span.sb-legal-url {
+    display: block;
+    height: 48px;
+  }
+  app-my-groups .my-cr-title img {
+    padding: 12px;
+    top: 4px;
+  }
+  app-group-details .gd-tab-header .gd-tab-name {
+    padding: 12px;
+  }
+  app-filters .flex-card-container {
+    padding: 25px;
+  }
+  app-filters .filter-item {
+    color: #595959;
+  }
+  app-filters ion-button.reset_button {
+    height: 48px;
+  }
+}
