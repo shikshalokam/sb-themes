@@ -1135,10 +1135,6 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
   .sb-popover .sb-popover-footer .sb-popover-action-btn {
     height: 48px !important;
   }
-  .content-share .share-desc {
-    height: 48px;
-    top: auto;
-  }
   // .profile-head .profile-symbol{
   //   width: 48px;
   //   height: 48px;
@@ -1211,4 +1207,66 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
   app-filters ion-button.reset_button {
     height: 48px;
   }
+  app-sb-share-popup {
+    .content-share .share-url {
+      margin-left: 75px;
+    }
+    .content-share .share-desc {
+      margin-left: 75px;
+    }
+    ion-radio {
+      width: 48px;
+      padding: 10px;
+      height: 48px;
+      --color: #424242;
+    }
+  }
+  app-data-sync {
+    ::slotted([slot="start"]) {
+      margin-inline-end: 10px;
+    }
+    ion-radio {
+      width: 48px;
+      padding: 10px;
+      height: 48px;
+      --color: #424242;
+      margin-inline-end: 10px;
+    }
+  }
+  app-group-details {
+    .gd-opts ion-icon {
+      padding: 15px;
+    }
+    .gd-header .gd-title .gd-opts {
+      right: 8px;
+      top: 0px;
+    }
+  }
+  app-create-edit-group {
+    .char-info {
+      color: #424242;
+    }
+    input.native-input {
+      height: 3rem;
+    }
+    .cr-terms-container .cr-terms {
+      padding: 14px;
+    }
+    .cr-terms-container ion-checkbox {
+      --size: 48px;
+      padding: 12px;
+      color: #424242;
+      width: var(--size);
+      height: var(--size);
+    }
+    .cr-terms-container .cr-terms-checkbox-label {
+      margin-left: auto;
+      top: -20px;
+      position: relative;
+    }
+    cr-terms-container ion-checkbox {
+      border-color: #424242;
+    }
+  }
 }
+
