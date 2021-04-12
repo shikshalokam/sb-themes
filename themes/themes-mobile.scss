@@ -189,7 +189,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   }
 
   .segment-button-checked {
-    --color-checked: var(--app-primary);
+    --color-checked: var(--app-primary) !important;
   }
   .ion-color-primary {
     --ion-color-base: var(--app-primary) !important;
@@ -226,6 +226,15 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     background: #000000 !important;
   }
 
+  ion-row.padding-12.md.hydrated {
+    --background: #000000 !important;
+    background: #000 !important;
+  }
+  ion-button.ion-text-capitalize.mb-16.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated {
+    --background: #000 !important;
+    color: var(--app-primary) !important;
+    background: #000 !important;
+  }
   //.ui-container::part(scroll),
 
   .ion-padding.ion-no-border,
@@ -276,7 +285,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   app-chapter-details .cd-header-container ion-card-content .sb-course-progress-container,
   app-chapter-details .cd-header-container .cd-flex-container,
   sb-toc-curriculum .sbchapter__item,
-  .rate-content .textarea {
+  .rate-content .textarea, .select-box.select-alert .alert-wrapper, .showLicensce ion-list {
     --app-primary-header: #333;
     background: var(--app-primary-header) !important;
   }
@@ -349,7 +358,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .subtitle,
   .sb-course-end-container,
   app-enrolled-course-details-page .sb-dt-card-actions .sb-course-progress-container,
-  app-enrolled-course-details-page .enrolled-course-container ion-card {
+  app-enrolled-course-details-page .enrolled-course-container ion-card,.certificate-container,.training-2 .sb-btn-tile {
     background: #222222 !important;
   }
 
@@ -368,7 +377,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     box-shadow: 0 20px 40px -10px #000000;
   }
 
-  .select-box.select-alert .alert-wrapper,
+
   .ftue-changes.select-alert .alert-wrapper,
   app-district-mapping .footer .btn-info {
     background-color: #000;
@@ -410,7 +419,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .main-content img.close-icon,
   .my-cr-title img,
   .panel-title-blue img.btn-arrow,
-  ion-button ion-icon [name="arrow-down"],
+  ion-button ion-icon[name="arrow-down"],
   .sb-label-grid.sb-box-grid .item .sb-icon-img,
   .sb-search-history-entry>div img,
   .filter-btn button img,
@@ -419,7 +428,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   ion-icon.mg-popup-btn-icon.md.hydrated,
   #main-content img.close-icon,
   app-create-edit-group button.sb-btn-large,
-  .my-cr-btn .sb-btn-large img,.enrolled-course-card-button img.play-icon,.send-email .report-button img {
+  .my-cr-btn .sb-btn-large img,.enrolled-course-card-button img.play-icon,.send-email .report-button img,.certificate-container .certificate-icon img.certificate-icon {
     filter: invert(1);
   }
 
@@ -429,7 +438,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .card-button .card-icons-red svg {
     fill:red;
   }
-  ion-tabs ion-tab-button.tab-selected ion-icon [aria-label="courses"], ion-tab-button#tab-button-courses ion-icon [aria-label="courses"] {
+  ion-tabs ion-tab-button.tab-selected ion-icon[aria-label="courses"], ion-tab-button#tab-button-courses ion-icon[aria-label="courses"] {
     filter: none !important;
   }
 
@@ -443,12 +452,6 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     border: 0px;
   }
 
-  //.sb-label-grid.show-ellipsis--two .item label
-  p.app-title.ion-text-center,
-  .title-class {
-    color: var(--app-primary);
-  }
-
   ion-select .select-text.select-placeholder,
   .select-text.select-placeholder .panel-title-blue,
   .sb-legal-url,
@@ -456,7 +459,8 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   app-enrolled-course-details-page .view-credits strong,
   .sb-progress-percent-text,
   .storage-info,
-  .sb-info .sb-url {
+  .sb-info .sb-url,.edit-setting, .training-2 .sb-btn-tile .sb-btn-footer-text, .sb-btn-tile .view-icon, p.app-title.ion-text-center,
+  .title-class{
     color: var(--app-primary) !important;
   }
 
@@ -596,7 +600,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .content-rating-detail,
   .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info,
   .alert-title.sc-ion-alert-md,
-  .alert-head.sc-ion-alert-md+.alert-message.sc-ion-alert-md {
+  .alert-head.sc-ion-alert-md+.alert-message.sc-ion-alert-md, .container-focus p {
     color: #ffffff !important;
   }
 
@@ -687,7 +691,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   ion-button.MT16.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated,
   app-faq-help .panel .yesBtn,
   ion-button.sign-in-btn.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated .button-native,
-  .sb--card--course--curiculum .sb--card__title {
+  .sb--card--course--curiculum .sb--card__title,.form-api-components .sb-label-grid.show-ellipsis .item label {
     color: #000000 !important;
   }
 
@@ -734,7 +738,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .add-to-group-btn-container .add-btn,
   add-activity-to-group .add-to-group-button,
   .au-btn .sb-btn-large,
-  .btn-info .save-changes, .send-email .report-button {
+  .btn-info .save-changes, .send-email .report-button,.save-changes {
     --background: var(--app-primary);
     border: 1px solid var(--app-primary);
     color: var(--black) !important;
