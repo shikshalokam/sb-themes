@@ -122,8 +122,8 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   --cc-toc-card-item-bs: var(--rc-rgba-primary);
   --cc-toc-card-item-img-bg: var(--rc-dddddd);
   --cc-toc-card-item-title: #ffffff;
-  --cc-toc-card-item-title-hover: #333333;
-  --cc-toc-card-item-score-text: #3F19C3;
+  --cc-toc-card-item-title-hover: #fff;
+  --cc-toc-card-item-score-text: #000000;
 
   //toc item
   --cc-chapter-br: var(--gray-100);
@@ -294,7 +294,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   app-enrollment-details .subtitle.head,
   app-enrollment-details ion-list,
   app-enrollment-details .subtitle.mytitle,
-  app-enrollment-details ion-item .subtitle.title,.spinner-div {
+  app-enrollment-details ion-item .subtitle.title,.spinner-div, app-discover .sb-label-grid .item, .search-bar, .search-bar input, .pills-filter .sb-label-grid .item, app-sb-subject-list-popup .main-content, app-sb-subject-list-popup .main-content .title-section {
     --app-primary-header: #333;
     background: var(--app-primary-header) !important;
   }
@@ -305,6 +305,11 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     color: #fff;
   }
 
+  .rating-opts .rate-content textarea {
+    background: #222;
+    border: 0px;
+    color: #fff;
+  }
   .rate-content .textarea {
     background: #222;
     border: 1px solid #222;
@@ -376,7 +381,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   app-enrolled-course-details-page .enrolled-course-container ion-card,
   .certificate-container,
   .training-2 .sb-btn-tile, .card-section-danger,
-  .course-modified, .sb-batch-end-container, .contributions .bolder.f16, .contributions .cards-container {
+  .course-modified, .sb-batch-end-container, .contributions .bolder.f16, .contributions .cards-container, app-discover .sb-label-grid.sb-pills-grid .item .img, .yes-clicked, #know-more-form textarea.input-text {
     background: #222222 !important;
   }
 
@@ -387,7 +392,13 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     background-position: center center;
     background-repeat: no-repeat;
   }
-
+  #know-more-form textarea.input-text {
+    border:0px;
+  }
+  ion-button.explore-more-books.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated {
+    background: none !important;
+    border: 0px !important;
+  }
   .language-card label,
   .card-container {
     background-color: #222222;
@@ -395,6 +406,14 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     box-shadow: 0 20px 40px -10px #000000;
   }
 
+  ion-button.sort-by.ng-tns-c30-1.ng-star-inserted.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated {
+    background: #333 !important;
+    border: none !important;
+    margin: 0;
+    height: 64px;
+    border-radius: 0 !important;
+    padding: 1rem !important;
+  }
 
   .ftue-changes.select-alert .alert-wrapper,
   app-district-mapping .footer .btn-info {
@@ -445,11 +464,11 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .sb-storage-container img,
   ion-icon.mg-popup-btn-icon.md.hydrated,
   #main-content img.close-icon,
-  app-create-edit-group button.sb-btn-large,
+  app-create-edit-group button.sb-btn-large img,
   .my-cr-btn .sb-btn-large img,
   .enrolled-course-card-button img.play-icon,
   .send-email .report-button img,
-  .certificate-container .certificate-icon img.certificate-icon {
+  .certificate-container .certificate-icon img.certificate-icon, .cd-chapter-card-button .play-icon, .pnc-profile-name img {
     filter: invert(1);
   }
 
@@ -457,11 +476,15 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     fill: var(--app-primary);
   }
 
+  ion-footer {
+    border-top: 1px solid #222;
+}
+
   .card-button .card-icons-red svg {
     fill: red;
   }
 
-  ion-tabs ion-tab-button.tab-selected ion-icon[aria-label="courses"] {
+  ion-tabs ion-tab-button.tab-selected ion-icon[aria-label="courses"], ion-tab-button#tab-button-courses.tab-selected ion-icon[aria-label=courses] {
     filter: none !important;
   }
 
@@ -476,7 +499,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   }
 
   ion-select .select-text.select-placeholder,
-  .select-text.select-placeholder .panel-title-blue,
+  .select-text.select-placeholder .panel-title-blue, .panel-heading .panel-title-blue,
   .sb-legal-url,
   ion-select.ion-text-capitalize.ion-valid.ion-touched,
   app-enrolled-course-details-page .view-credits strong,
@@ -628,10 +651,13 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info,
   .alert-title.sc-ion-alert-md,
   .alert-head.sc-ion-alert-md+.alert-message.sc-ion-alert-md,
-  .container-focus p, .sb-batch-end-container .batch-end-sub-heading,.contributions .bolder.f16, ion-card h6.second-line-ellipsis, .contributions ion-card .author {
+  .container-focus p, .sb-batch-end-container .batch-end-sub-heading,.contributions .bolder.f16, ion-card h6.second-line-ellipsis, .contributions ion-card .author, .cr-terms-checkbox-label,.my-cr-bg .mg-list-card-container .sb--card--course--curiculum .sb--card__title,app-discover .sb-label-grid.show-ellipsis .item label, .panel-info h6, .panel-info p, .search-bar, .search-bar input,.sb-slider-pills-container .sb-grade-pills-container .pill, .multi-select-section label.input-label, app-profile-name-confirmation-popover .sb-popover-content-details,.enrollment-end-date {
     color: #ffffff !important;
   }
 
+  .sb-content__bar {
+    background:none;
+  }
   .contributions {
     background: #111;
   }
@@ -671,8 +697,8 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   }
 
   .checkbox-icon {
-    border-color: #000;
-    background: #000;
+    border-color: #666 !important;
+    background: #222 !important;
   }
 
   .checkbox-icon path {
@@ -728,8 +754,8 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   }
 
   .ion-color-primary svg.ionicon.s-ion-icon path,
-  .sbchapter__item .sbchapter__img .icon-svg svg.icon.icon-svg--primary {
-    fill: var(--app-primary);
+  .sbchapter__item .sbchapter__img .icon-svg svg.icon.icon-svg--primary, .sbchapter__item .sbchapter__img--inprogress .icon-svg svg.icon.icon-svg--primary {
+    fill: var(--app-primary) !important;
   }
 
   .text-selected ion-icon[aria-label="checkmark"] svg {
@@ -779,7 +805,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .au-btn .sb-btn-large,
   .btn-info .save-changes,
   .send-email .report-button,
-  .save-changes {
+  .save-changes,#know-more-form .submit-button, ion-button.ion-text-capitalize.mb-16.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated.apply-btn {
     --background: var(--app-primary);
     border: 1px solid var(--app-primary);
     color: var(--black) !important;
@@ -795,7 +821,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
 
   ion-button[fill=outline],
   .add-to-group-btn-container .open-btn,
-  .btn-info .cancel_info {
+  .btn-info .cancel_info, .save-changes-not-agree {
     --background: #000 !important;
     color: var(--app-primary) !important;
     --border-color: var(--app-primary) !important;
@@ -805,6 +831,11 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
 
   ion-button.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated {
     border-radius: 18px;
+  }
+
+  app-create-edit-group form ion-item.item-label-stacked {
+    margin-top: 0;
+    padding-top: 0;
   }
 
   ion-button {
@@ -837,6 +868,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .sbchapter__item--active:hover,
   .sbchapter__item:hover {
     background: var(--app-primary) !important;
+    color:#000 !important;
   }
 
   .merged-input-container {
@@ -858,7 +890,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .cr-terms,
   .cr-terms-checkbox-label .terms-info,
   .text-selected,
-  ion-button.explore-more-content.md.button.button-block.button-outline.ion-activatable.ion-focusable.hydrated {
+  ion-button.explore-more-content.md.button.button-block.button-outline.ion-activatable.ion-focusable.hydrated,.app-rate-appname, .app-rate-heading {
     color: var(--app-primary) !important;
   }
 
@@ -866,6 +898,10 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     --background: #333333 !important;
   }
 
+  ion-button.app-rate-btn-outline.md.button.button-block.button-outline.ion-activatable.ion-focusable.hydrated, ion-button.app-rate-btn.md.button.button-block.button-solid.button-disabled.ion-activatable.ion-focusable.hydrated {
+    background: none !important;
+    border:none !important;
+  }
   .gd-tab-header .gd-tab.active {
     border-bottom: 2px solid var(--app-primary);
   }
