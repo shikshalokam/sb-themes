@@ -182,9 +182,10 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     --color-selected: var(--app-primary);
   }
 
-  ion-header .sb-header  {
+  ion-header .sb-header {
     border-bottom-left-radius: 24px;
   }
+
   :host {
     --indicator-color: var(--app-primary);
     --ripple-color: var(--color-selected);
@@ -240,8 +241,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   }
 
   ion-row.padding-12.md.hydrated {
-    --background: #000000 !important;
-    background: var(--background) !important;
+    background: #000 !important;
     padding: 0 !important;
   }
 
@@ -252,6 +252,19 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
 
   app-search-filter ion-button.ion-text-capitalize.mb-16.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated {
     background: #000 !important;
+
+    button.button-native {
+      background: #000;
+      border: 1px solid var(--app-primary);
+      color: #fff;
+    }
+
+  }
+
+  app-search-filter .search-filter-footer ion-row ion-col:first-child button.button-native {
+    background: #000;
+    border: 1px solid var(--app-primary);
+    color: #fff;
   }
 
   //.ui-container::part(scroll),
@@ -321,6 +334,10 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .contacts .phone {
     --app-primary-header: #333;
     background: var(--app-primary-header) !important;
+  }
+
+  .trainings .content {
+    border: 0.5px solid #222;
   }
 
   .search-bar {
@@ -430,7 +447,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
 
   #know-more-form textarea.input-text {
     border: 0px;
-    color:#fff;
+    color: #fff;
   }
 
   ion-card {
@@ -517,8 +534,17 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .filter-button img,
   accessdiscussion .card-icons,
   accessdiscussion .card-button .card-icons,
-  img.menu-icon {
+  img.menu-icon,
+  iframe[title="terms-and-condition"] {
     filter: invert(1);
+  }
+
+  .card-button .card-icons-red svg {
+    fill: #b30909;
+  }
+
+  sb-library-cards-stack button.sbbtn.flat.stack-btn.full-width {
+    border: 1px solid var(--app-primary) !important;
   }
 
   //.sb-btn-tile img[alt="delete content"],
@@ -533,10 +559,6 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
 
   ion-footer {
     border-top: 1px solid #222;
-  }
-
-  .card-button .card-icons-red svg {
-    fill: red;
   }
 
   ion-tabs ion-tab-button.tab-selected ion-icon[aria-label="courses"],
@@ -739,6 +761,10 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     color: #ffffff !important;
   }
 
+  ion-button.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated .md.hydrated {
+    color: #000 !important;
+  }
+
   .item-interactive-disabled.sc-ion-label-md-h:not(.item-multiple-inputs),
   .item-interactive-disabled:not(.item-multiple-inputs) .sc-ion-label-md-h {
     opacity: 0.5;
@@ -873,6 +899,10 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     fill: var(--app-primary) !important;
   }
 
+  sb-toc-curriculum .sbchapter__item--active .sbchapter__img .icon-svg svg.icon.icon-svg--primary {
+    fill: #000 !important;
+  }
+
   .text-selected ion-icon[aria-label="checkmark"] svg {
     stroke: var(--app-primary);
   }
@@ -927,7 +957,8 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     background: var(--background) !important;
   }
 
-  .search-filter-footer ion-button button, app-district-mapping .block-button-clear {
+  .search-filter-footer ion-button button,
+  app-district-mapping .block-button-clear {
     background: #000 !important;
     color: var(--app-primary) !important;
     border: 1px solid var(--app-primary) !important;
@@ -964,15 +995,16 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   }
 
   app-categories-edit ion-row.padding-12.md.hydrated {
-    --background: #333!important;
+    --background: #333 !important;
     background: #333 !important;
     padding: 0 !important;
   }
 
-.search-filter-footer .apply-btn button, .search-filter-footer button {
-  background: none !important;
-}
-  
+  .search-filter-footer .apply-btn button,
+  .search-filter-footer button {
+    background: none !important;
+  }
+
   app-create-edit-group form ion-item.item-label-stacked {
     margin-top: 0;
     padding-top: 0;
@@ -1007,8 +1039,16 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .sbchapter__item--active,
   .sbchapter__item--active:hover,
   .sbchapter__item:hover {
+    background: var(--cc-toc-card-item-hover) !important;
+  }
+
+  sb-toc-curriculum .sbchapter__item--active,
+  sb-toc-curriculum .sbchapter__item--active:hover,
+  sb-toc-curriculum .sbchapter__item:hover,
+  .sbchapter__item--active,
+  .sbchapter__item--active:hover,
+  .sbchapter__item:hover {
     background: var(--app-primary) !important;
-    color: #000 !important;
   }
 
   .merged-input-container {
@@ -1365,6 +1405,7 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
   app-district-mapping .btn-info {
     padding: 16px 8px;
   }
+
   .details-container {
     .grid-item {
       padding-top: 16px !important;
@@ -1574,7 +1615,7 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
 
   sb-dt-card-actions {
     .card-icons-red {
-      color: var(--color-red-error);
+      color: var(--color-red-error) !important;
     }
   }
 
@@ -1856,7 +1897,9 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
   //    }
   //   }
   .footer {
-    .block-button-save, .block-button-clear {
+
+    .block-button-save,
+    .block-button-clear {
       padding: 1rem !important;
     }
   }
