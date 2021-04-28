@@ -261,7 +261,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
 
   }
 
-  app-search-filter .search-filter-footer ion-row ion-col:first-child button.button-native {
+  app-search-filter .search-filter-footer ion-row ion-col:first-child > button.button-native {
     background: #000;
     border: 1px solid var(--app-primary);
     color: #fff;
