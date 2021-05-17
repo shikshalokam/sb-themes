@@ -1580,7 +1580,12 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
     }
   }
 
-  sb-pills-grid {
+  sb-pills-grid.size--sm{
+    .sb-label-grid.sb-pills-grid .item {
+      height: 3.5rem !important;
+    }
+  }
+  sb-pills-grid.size--md{
     .sb-label-grid.sb-pills-grid .item {
       height: 4.5rem !important;
     }
