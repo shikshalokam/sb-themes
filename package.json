@@ -1,6 +1,6 @@
 {
   "name": "@project-sunbird/sb-themes",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Sunbird project application themes",
   "main": "index.js",
   "scripts": {
@@ -22,8 +22,5 @@
   },
   "homepage": "https://github.com/Sunbird-Ed/sb-themes.git#readme",
   "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "@project-sunbird/sb-themes": "/Volumes/Workspace/Projects/2020/ekstep/sb-themes/project-sunbird-sb-themes-0.0.7.tgz"
-  }
+  "license": "MIT"
 }
