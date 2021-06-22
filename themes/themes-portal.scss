@@ -31,7 +31,7 @@ html[data-theme='Default'] {
 	--sbt-theme-blue-selectbox-lbg: #E5EDF5;
 	--sbt-theme-light-blue-selectbox-lbg: #E9F5FF;
 	--sbt-pill-hs: 212, 100%;
-	--sbt-pill-bg: hsl(var(--sbt-pill-hs), 90%);
+	--sbt-pill-bg: var(--white);
 	--sbt-pill-bg-active: hsl(var(--sbt-pill-hs), 50%); // #0076FE
 	--sbt-pill-text: #000000;
 	--sbt-pill-text-hover: #ffffff;
@@ -223,7 +223,7 @@ html[data-theme='Default'][layout='joy'] {
 	--primary-800: hsl(var(--primary-hs), 40%);
 	--primary-100: #f1f1e7;
 	--primary-300: #ececde;
-	--sbt-filter-bar-bg: var(--white);
+	--sbt-filter-bar-bg: #E9E8D9;
 	--sb-search-btn-bg: #333333;
 	--sb-search-btn-text: #ffffff;
 	--cc-grade-pill-container-bg: #e9e8d8;
