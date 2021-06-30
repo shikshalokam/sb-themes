@@ -395,9 +395,11 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     color: #000 !important;
   }
 
-  .search-bg {
-    background-color: #000;
-    --background: #000;
+  app-user-home, app-search, app-admin-home{
+    ion-content{
+      background-color: #000;
+      --background: #000;
+    }
   }
 
   ion-grid.scroll-list.md.hydrated ion-row ion-col ion-item {
@@ -1458,9 +1460,8 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
     }
 
     .preference-data img {
-      width: 48px;
-      height: 48px;
-      margin-left: 16px;
+      width: 2rem;
+      height: 2rem;
     }
   }
 
@@ -1567,6 +1568,13 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
         width: 48px !important;
       }
     }
+
+    .search-container {
+      .search-input{
+        padding: 0.5rem .75rem !important;
+      }
+    }
+
   }
 
   app-category-list-page {
@@ -1787,7 +1795,7 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
   app-license-card-component {
     .card-content-md {
       .view-credits {
-        padding: 13px !important;
+        padding: 12px 0 !important;
       }
     }
   }
@@ -1880,10 +1888,6 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
     ion-icon.sb-modal-close {
       height: 48px !important;
     }
-  }
-
-  .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info {
-    color: var(--color-dark-grey);
   }
 
   //   sb-multiple-dropdown{
@@ -1982,13 +1986,6 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
     height: 3rem !important;
   }
 
-  app-search {
-    .search-container .search-input {
-      input.native-input.sc-ion-input-md {
-        height: 3rem !important;
-      }
-    }
-  }
 
   page-language-settings {
     .continue {
