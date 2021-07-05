@@ -123,7 +123,7 @@ html[data-theme='Default'] {
 	--sb-course-progress-status-label: #333333;
 	--sb-list-data: var(--gray-400);
 	--sb-list-items: #333333;
-	--sb-profile-bg-c-4: var(--rc-E0EFFF);
+	--sb-profile-bg-c-4: var(--primary-0);
 	--sb-profile-page-basic-label-bg: var(--white);
 
 	//pagination
@@ -640,8 +640,6 @@ html[layout='joy'] {
 	}
 
 	.help-page {
-		width: calc(100% - 4%);
-		margin: 24px auto 0 auto;
 
 		.help-page__header {
 			border-radius: calculateRem(24px) !important;
@@ -1376,7 +1374,7 @@ html[data-theme=Darkmode] {
 	--sbt-sidemenu-bg: #333333;
 	--sidebar-profil-header-bg: #222222;
 	--sidebar-li-hover-bg: #222222;
-	--sb-linkmenu-bg: #222222;
+	--sb-linkmenu-bg: #333;
 	--sb-linkmenu-text: #ffffff;
 	--sb-linkmenu-active-text: var(--primary-color);
 	--sb-linkmenu-text-hover: #222222;
@@ -1480,7 +1478,7 @@ html[data-theme=Darkmode] {
 	--sb-course-progress-status-label: var(--black);
 	--sb-list-data: var(--gray-100);
 	--sb-list-items: var(--white);
-	--sb-profile-bg-c-4: #fff8db;
+	--sb-profile-bg-c-4: #444;
 	--sb-profile-page-basic-label-bg: #333333;
 
 	//black header bar
@@ -2546,6 +2544,14 @@ html[data-theme=Darkmode] {
 	}
 
 	.data-labels {
+		color: var(--white);
+	}
+
+	.sbt-header-menu-bar {
+		background: #222 !important;
+	}
+
+	.sb-section-preference {
 		color: var(--white);
 	}
 
