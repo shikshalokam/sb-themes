@@ -419,7 +419,11 @@ html[layout='joy'] {
 
 	.sb-search-box .sb-search-input {
 		height: 40px;
-		border-radius: var(--sbt-bradius-16) 0px 0px var(--sbt-bradius-16);
+		border-radius: var(--sbt-bradius-24) 0 0 var(--sbt-bradius-24);
+	}
+
+	.sb-search-box.hide-btn .sb-search-input {
+		border-radius: var(--sbt-bradius-24);
 	}
 
 	.sb-search-box .icon.search {
