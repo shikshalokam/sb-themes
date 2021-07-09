@@ -1578,8 +1578,15 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
   }
 
   app-category-list-page {
-    .ion-text-capitalize {
-      height: 48px !important;
+    .filter-container{
+      .ion-text-capitalize {
+        height: 48px !important;
+        padding-top: 1rem !important;
+      }
+      
+      .filter-button{
+        height: 100% !important;
+      }
     }
 
     .ion-activatable.ion-focusable {
