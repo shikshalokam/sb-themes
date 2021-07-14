@@ -248,6 +248,10 @@ html[layout='joy'] {
 	--sb-modal-content-bg: var(--sbt-compt-bg);
 	--sb-modal-actions-bg: var(--sbt-compt-bg);
 
+	.profile-bg-c-3 {
+    border-radius: 2rem;
+    margin-top: 24px;
+	}
 	.sb--card {
 		border-radius: 1rem !important;
 		box-shadow: var(--sbt-box-shadow-6px);
@@ -1685,9 +1689,16 @@ html[data-theme=Darkmode] {
 	}
 
 	.sb-label-grid.sb-pills-grid .item {
-		background-color: var(--black) !important;
+		// background-color: var(--black) !important;
 	}
-
+	sb-pills-grid[ng-reflect-title='Browse by Categories'] {
+		.sb-label-grid.sb-pills-grid .item {
+			background-color: #222 !important;
+		}
+	}
+	.sb-label-grid .item:hover {
+		background: #333;
+	}
 	.sb-btn-round {
 		background: #444444;
 	}
@@ -1698,7 +1709,10 @@ html[data-theme=Darkmode] {
 	app-activity-search .sbt-center-container,
 	app-activity-details .sbt-center-container,
 	app-add-member .sbt-center-container, .sbt-fluid-content-bg, .sbt-page-content-area {
-		background: #111;
+		background: rgba(17, 17, 17, 0.75);
+	}
+	.sbt-page-content-area {
+		background: none !important;
 	}
 	.batch-details__dropdown .selection.ui.dropdown {
 		background: #222;
