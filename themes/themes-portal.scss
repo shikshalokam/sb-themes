@@ -189,6 +189,15 @@ html[data-theme='Default'] {
 	--visit-helpcenter-bg: var(--white);
 	--sbfaq-compt-bg: #fff;
 
+	::placeholder {
+		color: #333333 !important;
+		opacity: 1 !important; /* Firefox */
+	  }
+	  
+	  :-ms-input-placeholder,::-ms-input-placeholder { /* Internet Explorer 10-11 */
+	   color: #333333 !important;
+	  }
+
 	.navBlock .pdf-nav-unit {
 		color: var(--white) !important;
 	}
@@ -1643,6 +1652,15 @@ html[data-theme=Darkmode] {
 	--sb-modal-actions-bg: var(--sbt-compt-bg);
 
 	--visit-helpcenter-bg: #333333;
+
+	::placeholder {
+		color: #fff !important;
+		opacity: 1 !important; /* Firefox */
+	  }
+	  
+	  :-ms-input-placeholder,::-ms-input-placeholder { /* Internet Explorer 10-11 */
+	   color: #fff !important;
+	  }
 
 	.sb-btn-link-primary:hover, .sb-btn-link-primary:active, .sb-btn-link-primary.active {
 		background-color: var(--primary-800);
@@ -3126,8 +3144,8 @@ html[accessable-theme="accessible"] {
 	}
 
 
-	.content-metadeta__title {
-		color: #4b4b4b !important
+	.content-metadeta__title,.content-metadeta__text {
+		color: #4a4a4a !important
 	}
 
 	// .sb-btn-normal {
