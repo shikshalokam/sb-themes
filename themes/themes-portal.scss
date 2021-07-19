@@ -3403,5 +3403,7 @@ html[accessable-theme="accessible"] {
 		color: var(--accessible-green) !important;
 	}
 
-
+	.ui.form .required.field>label,.sb-requirement-field {
+		color: #51514D;
+	  }
 }
