@@ -211,7 +211,6 @@ html[data-theme='Default'] {
     .orange-border {
         border-color: var(--red-100);
     }
-
 }
 
 html[data-theme=Darkmode][layout='old'] {
@@ -456,6 +455,11 @@ html[layout='joy'] {
 	}
 
 	.sb-search-box.hide-btn .sb-search-input {
+		border-radius: var(--sbt-bradius-24);
+	}
+
+	.sb-search-box.no-btn .sb-search-input {
+		height: 2.5rem;
 		border-radius: var(--sbt-bradius-24);
 	}
 
