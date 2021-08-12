@@ -6,11 +6,16 @@ html[data-theme='Default'] {
 	--df-black: #000;
 	--df-blue: #024f9d;
 
+	.df-btn{
+		cursor: pointer;
+	}
+
 	.df-back-btn-container {
 		background: var(--df-primary-bg);
 
 		.df-back-btn{
 			color: var(--df-blue);
+			background: var(--df-white);
 		}
 
 		.df-close-btn {
@@ -57,6 +62,7 @@ html[layout='joy'] {
 		box-shadow: var(--df-box-shadow-6px);
 		border: 0px;
 		padding: 0.5rem 1.5rem !important;
+		cursor: pointer;
 	}
 
 	.df-back-btn-container {
@@ -67,6 +73,7 @@ html[layout='joy'] {
 
 		.df-back-btn {
 			margin-left: 0.25rem;
+			background: var(--df-white);
 		}
 
 		.df-close-btn {
@@ -192,6 +199,7 @@ html[data-theme='Darkmode'][layout='joy'] {
 		height: 2.5rem;
 		box-shadow: var(--df-box-shadow-6px);
 		border: 0px;
+		cursor:pointer;
 	}
 
 	.df-back-btn-container {
@@ -206,7 +214,7 @@ html[data-theme='Darkmode'][layout='joy'] {
 
 		.df-back-btn {
 			color: var(--df-white);
-			background: var(--df-primary-color);
+			background: var(--df-primary-color) !important;
 
 			img {
 				filter: invert(1);
@@ -386,7 +394,7 @@ html[data-theme='Darkmode'][layout='joy'] {
 			.category-name,
 			label,
 			div.time {
-				color: var(--df-white);
+				color: var(--df-white) !important;
 			}
 
 			.separator-dot {
@@ -447,13 +455,17 @@ html[data-theme='Darkmode'][layout='old'] {
 
 	// Discussion Forum
 
+	.df-btn{
+		cursor: pointer;
+	}
+
 	.df-back-btn-container {
 		background: var(--df-primary-bg);
 		z-index: 2;
 
 		.df-back-btn {
 			color: var(--df-white);
-			background: var(--df-primary-color);
+			background: var(--df-primary-color) !important;
 
 			img {
 				filter: invert(1);
@@ -550,7 +562,7 @@ html[data-theme='Darkmode'][layout='old'] {
 			.category-name,
 			label,
 			div.time {
-				color: var(--df-white);
+				color: var(--df-white) !important;
 			}
 
 			.separator-dot {
