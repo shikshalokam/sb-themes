@@ -214,7 +214,7 @@ html[data-theme='Darkmode'][layout='joy'] {
 
 		.df-back-btn {
 			color: var(--df-white);
-			background: var(--df-primary-color) !important;
+			background: var(--df-primary-color);
 
 			img {
 				filter: invert(1);
@@ -394,7 +394,7 @@ html[data-theme='Darkmode'][layout='joy'] {
 			.category-name,
 			label,
 			div.time {
-				color: var(--df-white) !important;
+				color: var(--df-white);
 			}
 
 			.separator-dot {
@@ -465,7 +465,7 @@ html[data-theme='Darkmode'][layout='old'] {
 
 		.df-back-btn {
 			color: var(--df-white);
-			background: var(--df-primary-color) !important;
+			background: var(--df-primary-color);
 
 			img {
 				filter: invert(1);
@@ -562,7 +562,7 @@ html[data-theme='Darkmode'][layout='old'] {
 			.category-name,
 			label,
 			div.time {
-				color: var(--df-white) !important;
+				color: var(--df-white);
 			}
 
 			.separator-dot {
