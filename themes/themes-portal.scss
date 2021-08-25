@@ -1659,6 +1659,17 @@ html[data-theme=Darkmode] {
 
 	--visit-helpcenter-bg: #333333;
 
+	.faq-report-container h6{
+		color: #f2f2f2;
+	}
+	.faq-report-container sb-form .multi-select-section-app .multi-select-container{
+		sb-caret-down svg{
+			filter: none;
+		}
+		.list-border ul{
+			color: var(--black);
+		}
+	}
 	::placeholder {
 		color: #fff !important;
 		opacity: 1 !important; /* Firefox */
