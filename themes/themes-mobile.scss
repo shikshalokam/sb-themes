@@ -178,6 +178,9 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   --ripple-color: var(--color-selected);
   --color-checked: var(--app-primary);
 
+  --cc-listView-compt-itemText:#fff;
+  --cc-listView-compt-title:#fff;
+
   ion-tabs ion-tab-button {
     --color-selected: var(--app-primary);
   }
@@ -897,7 +900,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .card-button .card-icons svg,
   .refresh-icon svg.ionicon.s-ion-icon,
   .sb-textbook-title-container .textbook-icon svg,
-  ion-icon[name="settings"] svg {
+  ion-icon[name="settings"] svg, .icon-svg svg.icon.icon-svg--primary, icon.icon-svg--primary {
     fill: var(--app-primary) !important;
   }
 
@@ -1392,6 +1395,17 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     color: var(--app-primary);
   }
 
+  .faq-sub-title, .selected-category-name, app-faq-help ion-content:first-child .container-focus {
+    color: #fff;
+  }
+  app-faq-help sb-list .listView-compt section.mt-24 button {
+    background-color: var(--app-primary) !important;
+    color: var(--app-white) !important;
+  }
+
+  ::placeholder, :-ms-input-placeholder,::-ms-input-placeholder,::-ms-placeholder, ::-webkit-input-placeholder, ::-moz-placeholder {
+    color: #555;
+  }
 }
 
 // accessbility changes

@@ -1668,6 +1668,9 @@ html[data-theme=Darkmode] {
 
 	--visit-helpcenter-bg: #333333;
 
+	.sbt-theme-bg-img .st0 {
+		fill: #999;
+	}
 	.faq-report-container h6{
 		color: #f2f2f2;
 	}
@@ -1762,7 +1765,7 @@ html[data-theme=Darkmode] {
 		background: #222;
 	}
 	.sb--card.sb--card--theme2 .sb--card__moreinfo {
-		background: #333 !important;
+		// background: #333 !important;
 	}
 	.terms-and-cond-form iframe {
 		filter: invert(1);
