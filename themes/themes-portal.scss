@@ -188,7 +188,11 @@ html[data-theme='Default'] {
 	--themeflower-bg: #ffd92a;
 	--visit-helpcenter-bg: var(--white);
 	--sbfaq-compt-bg: #fff;
-
+	.sb-single-resource {
+		.content-video__player {
+			background: var(--white);
+		}
+	}
 	::placeholder {
 		color: #333333 !important;
 		opacity: 1 !important; /* Firefox */
@@ -785,7 +789,6 @@ html[layout='joy'] {
 			box-shadow: var(--sbt-box-shadow-6px);
 			margin-bottom: calculateRem(16px);
 			border-radius: var(--sbt-bradius-24);
-			background: var(--sbt-compt-bg);
 			overflow: hidden;
 		}
 	}
@@ -814,7 +817,6 @@ html[layout='joy'] {
 
 	.content-video__player__details {
 		border-radius: 0 0 var(--sbt-bradius-24) var(--sbt-bradius-24);
-		background: var(--sbt-compt-bg) !important;
 	}
 
 	.sb-accordion-content,
@@ -1667,7 +1669,7 @@ html[data-theme=Darkmode] {
 	--sb-modal-actions-bg: var(--sbt-compt-bg);
 
 	--visit-helpcenter-bg: #333333;
-
+	
 	.sbt-theme-bg-img .st0 {
 		fill: #999;
 	}
