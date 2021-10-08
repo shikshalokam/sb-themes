@@ -765,7 +765,12 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info {
     color: #ffffff !important;
   }
-
+  .checkmark {
+    border-color: #fff;
+  }
+  :not(.normalize) .container .checkmark:after {
+    border-color: #000;
+  }
   ion-button.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated .md.hydrated {
     color: #000 !important;
   }
