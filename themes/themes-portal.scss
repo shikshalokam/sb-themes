@@ -83,6 +83,10 @@ html[data-theme='Default'] {
 	--sb-linkmenu-bg-hover: var(--primary-color);
 	--sb-linkmenu-icon-bg-hover: var(--white);
 	--sb-btn-default-color: var(--white);
+	--sb-sidebar-menu-bg-active: var(--primary-0);
+	--sb-sidebar-menu-border-bg: var(--primary-color);
+	--sb-sidebar-menu-text: var(--primary-color);
+	--sb-graph-section-bg: var(--white);
 
 	//header
 	--sb-menu-bg: #E5EDF5;
@@ -261,6 +265,11 @@ html[layout='joy'] {
 	--sb-modal-header-text: var(--black);
 	--sb-modal-content-bg: var(--sbt-compt-bg);
 	--sb-modal-actions-bg: var(--sbt-compt-bg);
+
+	--sb-sidebar-menu-bg-active: var(--sbt-body-bg);
+	--sb-sidebar-menu-border-bg: #024f9d;
+	--sb-sidebar-menu-text: #333;
+	--sb-graph-section-bg: var(--sbt-body-bg2);
 
 	.profile-bg-c-3 {
     border-radius: 2rem;
@@ -1454,6 +1463,10 @@ html[data-theme=Darkmode] {
 	--sbt-theme-green-selectbox: #ffffff;
 	--sb-search-input-text: #ffffff;
 	--sb-search-input-bg: #222222;
+	--sb-sidebar-menu-bg-active: var(--sbt-filter-bar-bg);
+	--sb-sidebar-menu-border-bg: var(--primary-color);
+	--sb-sidebar-menu-text: var(--primary-600);
+	--sb-graph-section-bg: var(--sbt-body-bg2);
 
 	//cc
 	--cc-accordion-panel-br: var(--primary-300);
@@ -2722,6 +2735,69 @@ html[data-theme=Darkmode] {
 		background: var(--sbt-compt-bg)!important;
 		.no-result-text {
 			color: var(--white);
+		}
+	}
+
+	//   Data tables
+
+	table.dataTable thead th,
+	.sb-table tbody td {
+		background-color: var(--gray);
+		color: var(--white);
+	}
+
+	.dataTables_wrapper {
+		label {
+			color: var(--white);
+		}
+
+		.dataTables_length select {
+			color: var(--white);
+			background-color: var(--gray);
+		}
+
+		.dataTables_info {
+			color: var(--white);
+		}
+
+		.dataTables_paginate .paginate_button {
+			color: var(--white) !important;
+
+			&.current {
+				color: var(--white) !important;
+				background-color: #585858;
+				background: linear-gradient(to bottom, #585858 0%, #111 100%);
+			}
+		}
+	}
+
+	// Date picker
+	.md-drppicker {
+		background: #444;
+		color: var(--white);
+
+		.ranges ul li button {
+			&[disabled] {
+				opacity: .6;
+			}
+
+			color: var(--white);
+		}
+
+		.calendar-table {
+			background: #444;
+			border-color: #444;
+		}
+
+		td.available.prev,
+		th.available.prev,
+		td.available.next,
+		th.available.next {
+			filter: invert(1);
+		}
+
+		.btn {
+			color: var(--gray);
 		}
 	}
 }
