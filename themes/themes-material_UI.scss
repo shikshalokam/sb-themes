@@ -1,0 +1,300 @@
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
+
+html[data-theme='Default'] {
+
+    // Material Tabs
+    --mat-ink-bar-bg: var(--primary-color);
+    --mat-tab-labels-bg: var(--white);
+    --mat-tab-label-text: var(--gray-800);
+
+    // Material Toggle
+    --mat-slide-toggle-bar: var(--gray-300);
+    --mat-slide-toggle-bar-active: var(--primary-color);
+    --mat-slide-toggle-thumb-active: var(--white);
+
+    // Material Tooltip
+    --mat-tooltip-text: var(--gray-800);
+
+    // Material Accordion
+    --mat-accordion-expansion-panel-bg: var(--white);
+    --mat-accordion-expansion-panel-text: var(--gray-800);
+    --mat-accordion-title-text: var(--primary-color);
+    --mat-accordion-expansion-panel-header-bg: var(--white);
+    --mat-accordion-expansion-panel-body-bg: var(--primary-0);
+    --mat-accordion-expansion-indicator-bg: var(--primary-color);
+
+    // Tab Group inside Accordion variables
+    --mat-accordion-tab-label-text: var(--gray-800);
+    --mat-accordion-tab-label-bg: var(--white);
+    --mat-accordion-tab-border-bg: var(--gray-100);
+    --mat-accordion-tab-body-active-bg: var(--white);
+    --mat-accordion-tab-border-bg: var(--gray-100);
+    --mat-accordion-tabs-label-after-bg: var(--gray-100);
+    --mat-accordion-tabs-label-active-after-bg: var(--white);
+
+    .sb-mat {
+        &__accordion.mat-accordion {
+            .mat-expansion-panel {
+                border-radius: calculateRem(4px);
+            }
+        }
+    }
+
+}
+
+html[layout='joy'] {
+
+    --mat-tab-labels-bg: var(--sbt-body-bg2);
+
+    --mat-accordion-tab-body-active-bg: var(--sbt-body-bg);
+    --mat-accordion-tab-label-bg: var(--sbt-body-bg);
+
+    --mat-accordion-tabs-label-after-bg: var(--mat-accordion-tab-border-bg);
+    --mat-accordion-tabs-label-active-after-bg: var(--sbt-body-bg);
+
+    // Material Accordion
+    --mat-accordion-expansion-panel-bg: var(--sbt-compt-bg);
+    --mat-accordion-expansion-panel-header-bg: var(--sbt-compt-bg);
+    --mat-accordion-expansion-panel-body-bg: var(--sbt-compt-bg);
+
+    .mat-tab__usage-report {
+        .mat-tab-header {
+            border-radius: calculateRem(16px);
+        }
+    }
+
+    .sb-mat {
+        &__accordion.mat-accordion {
+            .mat-expansion-panel {
+                border-radius: var(--sbt-bradius-24);
+                box-shadow: none;
+                border: none;
+            }
+        }
+    }
+}
+
+html[data-theme=Darkmode] {
+
+    // Material Tabs
+    --mat-ink-bar-bg: var(--primary-color);
+    --mat-tab-labels-bg: var(--sbt-body-bg2);
+    --mat-tab-label-text: var(--gray-800);
+
+    // Material Toggle
+    --mat-slide-toggle-bar: var(--gray-300);
+    --mat-slide-toggle-bar-active: var(--primary-color);
+    --mat-slide-toggle-thumb-active: var(--white);
+
+    // Material Accordion
+    --mat-accordion-expansion-panel-bg: var(--sbt-compt-bg);
+    --mat-accordion-expansion-panel-text: var(--gray-800);
+    --mat-accordion-title-text: var(--primary-color);
+    --mat-accordion-expansion-panel-header-bg: var(--sbt-compt-bg);
+    --mat-accordion-expansion-panel-body-bg: var(--sbt-compt-bg);
+    --mat-accordion-expansion-indicator-bg: var(--primary-color);
+
+    // Tab Group inside Accordion variables
+    --mat-accordion-tab-label-text: var(--gray-800);
+    --mat-accordion-tab-label-bg: #222;
+    --mat-accordion-tab-border-bg: var(--gray-100);
+    --mat-accordion-tab-body-active-bg: #222;
+    --mat-accordion-tab-border-bg: var(--gray-100);
+    --mat-accordion-tabs-label-after-bg: var(--gray-100);
+    --mat-accordion-tabs-label-active-after-bg: #222;
+
+    // Material Tabs
+    .mat-tab__usage-report,
+    mat-tab-group {
+        canvas {
+            filter: invert(1);
+        }
+    }
+}
+
+html[data-theme='Darkmode'][layout='joy'] {}
+
+
+// Tab
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: var(--mat-ink-bar-bg);
+}
+
+.mat-tab__usage-report {
+    .mat-tab-header {
+        background: var(--mat-tab-labels-bg);
+
+        .mat-tab-label {
+            color: var(--mat-tab-label-text);
+        }
+    }
+}
+
+.sb-mat__accordion,
+.mat-tab__usage-report {
+    .mat-tab-label {
+        opacity: 1;
+    }
+}
+
+
+// Slide Toggle
+.mat-slide-toggle {
+
+    .mat-slide-toggle-bar {
+        background-color: var(--mat-slide-toggle-bar);
+        height: calculateRem(24px);
+        width: calculateRem(56px);
+        border-radius: calculateRem(16px);
+
+        .mat-slide-toggle-thumb-container {
+            top: 0;
+        }
+
+        .mat-slide-toggle-thumb-container,
+        .mat-slide-toggle-thumb {
+            width: calculateRem(24px);
+            height: calculateRem(24px);
+        }
+    }
+
+    &.mat-checked {
+        .mat-slide-toggle-bar {
+            background-color: var(--mat-slide-toggle-bar-active);
+
+            .mat-slide-toggle-thumb-container {
+                transform: translate3d(calculateRem(32px), 0, 0);
+            }
+        }
+
+        .mat-slide-toggle-thumb,
+        .mat-ripple-element {
+            background-color: var(--mat-slide-toggle-thumb-active);
+        }
+    }
+}
+
+// Tooltip
+mat-tooltip-component .mat-tooltip {
+    padding: calculateRem(8px) calculateRem(14px);
+    font-size: calculateRem(12px);
+    margin: calculateRem(6px);
+    background: var(--mat-tooltip-text);
+}
+
+// Accordion
+
+.sb-mat {
+    &__accordion.mat-accordion {
+
+        .mat-expansion-panel {
+            background: var(--mat-accordion-expansion-panel-bg);
+            color: var(--mat-accordion-expansion-panel-text);
+            margin-bottom: calculateRem(8px);
+            border: .5px solid var(--primary-300);
+            box-shadow: 0 .1875rem .25rem 0 rgba(var(--rc-rgba-primary), .1) !important;
+
+            &.mat-expansion-panel-spacing {
+                margin: calculateRem(16px) 0;
+            }
+        }
+
+        .mat-expansion-panel-header {
+            height: calculateRem(56px) !important;
+            font-size: calculateRem(16px);
+            font-weight: bold;
+            background: var(--mat-accordion-expansion-panel-header-bg) !important;
+
+            .mat-expansion-panel-header-title {
+                color: var(--mat-accordion-title-text);
+            }
+
+            .mat-expansion-indicator::after {
+                border-width: 0 calculateRem(3px) calculateRem(3px) 0;
+                color: var(--mat-accordion-expansion-indicator-bg);
+            }
+        }
+
+        .mat-expansion-panel-content {
+            .mat-expansion-panel-body {
+                padding: calculateRem(16px);
+                background: var(--mat-accordion-expansion-panel-body-bg);
+            }
+        }
+    }
+}
+
+
+// Tab Group inside Accordion
+mat-tab-group.sb-mat__tab {
+    &.sb-mat__tab--tabinacc {
+
+        .mat-tab-header {
+            border-bottom: none;
+        }
+
+        .mat-tab-body {
+            &.mat-tab-body-active {
+                background: var(--mat-accordion-tab-body-active-bg);
+                border: 1px solid var(--mat-accordion-tab-border-bg);
+                border-top: none;
+                padding: calculateRem(16px);
+            }
+
+            .mat-tab-body-content {
+                overflow: unset;
+            }
+        }
+
+        .mat-tab-labels,
+        .mat-tab-label.mat-tab-label-active {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+
+        .mat-tab-labels {
+            &::after {
+                height: 1px;
+                background: var(--mat-accordion-tabs-label-after-bg);
+            }
+        }
+
+        .mat-tab-label {
+            color: var(--mat-accordion-tab-label-text);
+            opacity: 1;
+
+            &.mat-tab-label-active {
+                background: var(--mat-accordion-tab-label-bg);
+                border: 1px solid var(--mat-accordion-tab-border-bg);
+                border-bottom: none;
+                z-index: 1;
+
+                &::after {
+                    height: 2px;
+                    background: var(--mat-accordion-tabs-label-active-after-bg);
+                }
+            }
+        }
+
+        &.list-all-mat-tab {
+            .mat-tab-label {
+                width: 50%;
+            }
+        }
+
+        .mat-ink-bar {
+            display: none;
+        }
+    }
+
+}
