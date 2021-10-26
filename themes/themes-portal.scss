@@ -1502,7 +1502,7 @@ html[data-theme=Darkmode] {
 	--cc-sbcard-title: #ffffff;
 	--cc-sbcard-meta-text: var(--gray-800);
 	--cc-sbcard-dot-divider: var(--gray-200);
-	--cc-sbcard-moreinfo-bg: #333;
+	--cc-sbcard-moreinfo-bg: none;
 	--cc-sbcard-moreinfo-bordertop: #cacbce;
 	--cc-sbcard-meta2-text: var(--gray-800);
 	--cc-sbcard-org-text: var(--gray-200);
@@ -1523,6 +1523,8 @@ html[data-theme=Darkmode] {
 	--sbt-pill-hs: 212, 100%;
 	--cc-sbcard-data2-bg: #444444;
 	--cc-sbcard-data2-bg-active: #ffeb2a;
+	--cc-sbcard-data0-bg: #444444;
+	--cc-sbcard-data0-bg-active:#ffeb2a;
 	--cc-sbcard-type-bg: var(--black);
 	--cc-sbcard-type-text: var(--white);
 	--sbt-filter-switcher-bg: var(--primary-theme);
