@@ -63,7 +63,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   --cc-sbcard-title: #ffffff;
   --cc-sbcard-meta-text: #fff;
   --cc-sbcard-dot-divider: var(--gray-200);
-  --cc-sbcard-moreinfo-bg: #222222;
+  --cc-sbcard-moreinfo-bg: none;
   --cc-sbcard-moreinfo-bordertop: #cacbce;
   --cc-sbcard-meta2-text: #fff;
   --cc-sbcard-org-text: var(--gray-200);
@@ -85,6 +85,8 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   --sbt-pill-hs: 212, 100%;
   --cc-sbcard-data2-bg: #444444;
   --cc-sbcard-data2-bg-active: #ffeb2a;
+  --cc-sbcard-data0-bg: #444444;
+  --cc-sbcard-data0-bg-active: #ffeb2a;
   --cc-sbcard-type-bg: var(--black);
   --cc-sbcard-type-text: var(--white);
 
@@ -441,7 +443,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   #know-more-form textarea.input-text {
     background: #222222 !important;
   }
-
+  
   ion-tabs ion-tab-button:nth-child(3) ion-icon {
     background: var(--app-black);
     background-image: url(/assets/imgs/ic_qr_scanner.svg);
@@ -762,15 +764,18 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .sb-popover-content,
   app-profile .contacts .phone .value,
   .content-share .share-desc,
-  .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info {
+  .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info,sb-form sb-multiple-dropdown .multi-select-container ul span {
     color: #ffffff !important;
   }
+
   .checkmark {
     border-color: #fff;
   }
+
   :not(.normalize) .container .checkmark:after {
     border-color: #000;
-  }
+}
+
   ion-button.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated .md.hydrated {
     color: #000 !important;
   }
@@ -1422,6 +1427,20 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
   --color-dark-black: #000000 !important;
   --color-panther: #424242 !important;
   --color-gray34: #575757 !important;
+  
+  --app-primary:#00458F !important;
+  --app-medium-gray:#4A4A4A;
+  --app-light-gray:#555;
+  $red: #AD0011;
+  $gray-300: lighten($gray, 12%); // sub heading 2 #969696
+$gray-400: lighten($gray, 8%); // sub heading #666666
+
+  .select-text.select-placeholder, .alert-message.sc-ion-alert-md, .alert-input-group.sc-ion-alert-md {
+    color: #555555;
+  }
+  .sc-ion-label-ios-s>p {
+    color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.75);
+  }
 
   app-district-mapping .btn-info {
     padding: 16px 8px;
