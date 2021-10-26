@@ -1739,9 +1739,21 @@ html[data-theme=Darkmode] {
 		background-color: #000000 !important;
 	}
 
-	.quml-option {
+	.quml-option, .quml-mcq-option-card {
 		background-color: #222222;
 		border: .0625rem solid #222;
+	}
+	.lanscape-mode-right ul .showFeedBack-progressBar .active, .lanscape-mode-right ul .showFeedBack-progressBar.att-color, .lanscape-mode-right ul .showFeedBack-progressBar.progressBar-border{
+		color: var(--black);
+	}
+	.quml-mcq p, .quml-mcq span, .quml-sa p, .quml-sa span, .startpage__instr-desc p, .startpage__instr-desc span, quml-mcq-solutions p, quml-mcq-solutions span, quml-sa p, quml-sa span{
+		color: var(--white);
+	}
+	.player-endpage__right-panel .title-section .title{
+		color: var(--white);
+	}
+	.replay-section div svg g path{
+		fill: var(--white);
 	}
 	.quml-navigation__next--active::after, .quml-navigation__next:hover::after, .quml-navigation__previous--active::after, .quml-navigation__previous:hover::after {
 		border-color: #000;
