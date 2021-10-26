@@ -192,7 +192,11 @@ html[data-theme='Default'] {
 	--themeflower-bg: #ffd92a;
 	--visit-helpcenter-bg: var(--white);
 	--sbfaq-compt-bg: #fff;
-
+	.sb-single-resource {
+		.content-video__player {
+			background: var(--white);
+		}
+	}
 	::placeholder {
 		color: #333333 !important;
 		opacity: 1 !important; /* Firefox */
@@ -794,7 +798,6 @@ html[layout='joy'] {
 			box-shadow: var(--sbt-box-shadow-6px);
 			margin-bottom: calculateRem(16px);
 			border-radius: var(--sbt-bradius-24);
-			background: var(--sbt-compt-bg);
 			overflow: hidden;
 		}
 	}
@@ -823,7 +826,6 @@ html[layout='joy'] {
 
 	.content-video__player__details {
 		border-radius: 0 0 var(--sbt-bradius-24) var(--sbt-bradius-24);
-		background: var(--sbt-compt-bg) !important;
 	}
 
 	.sb-accordion-content,
@@ -1680,7 +1682,7 @@ html[data-theme=Darkmode] {
 	--sb-modal-actions-bg: var(--sbt-compt-bg);
 
 	--visit-helpcenter-bg: #333333;
-
+	
 	.sbt-theme-bg-img .st0 {
 		fill: #999;
 	}
@@ -1737,9 +1739,21 @@ html[data-theme=Darkmode] {
 		background-color: #000000 !important;
 	}
 
-	.quml-option {
+	.quml-option, .quml-mcq-option-card {
 		background-color: #222222;
 		border: .0625rem solid #222;
+	}
+	.lanscape-mode-right ul .showFeedBack-progressBar .active, .lanscape-mode-right ul .showFeedBack-progressBar.att-color, .lanscape-mode-right ul .showFeedBack-progressBar.progressBar-border{
+		color: var(--black);
+	}
+	.quml-mcq p, .quml-mcq span, .quml-sa p, .quml-sa span, .startpage__instr-desc p, .startpage__instr-desc span, quml-mcq-solutions p, quml-mcq-solutions span, quml-sa p, quml-sa span{
+		color: var(--white);
+	}
+	.player-endpage__right-panel .title-section .title{
+		color: var(--white);
+	}
+	.replay-section div svg g path{
+		fill: var(--white);
 	}
 	.quml-navigation__next--active::after, .quml-navigation__next:hover::after, .quml-navigation__previous--active::after, .quml-navigation__previous:hover::after {
 		border-color: #000;
