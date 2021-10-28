@@ -1711,6 +1711,9 @@ html[data-theme=Darkmode] {
 	.sb-btn-link-primary:hover, .sb-btn-link-primary:active, .sb-btn-link-primary.active {
 		background-color: var(--primary-800);
 	}
+
+
+	///QUML player darkmode styles
 	.quml-mcq,
   .quml-sa, quml-sa {
 	  p {color:#fff;}
@@ -1759,6 +1762,13 @@ html[data-theme=Darkmode] {
 	}
 	.replay-section div svg g path:first-child {
 		fill: transparent;
+	}
+	.scoreboard__index.unattempted{
+		color: #fff;
+    	border: 0.03125rem solid #fff;
+	}
+	.main-container{
+		background: #333;
 	}
 	.quml-navigation__next--active::after, .quml-navigation__next:hover::after, .quml-navigation__previous--active::after, .quml-navigation__previous:hover::after {
 		border-color: #000;

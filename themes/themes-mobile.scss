@@ -764,7 +764,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .sb-popover-content,
   app-profile .contacts .phone .value,
   .content-share .share-desc,
-  .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info,sb-form sb-multiple-dropdown .multi-select-container ul span {
+  .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info,sb-form sb-multiple-dropdown .multi-select-container ul span, .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info,sb-form sb-multiple-dropdown .multi-select-container ul span,.sb--card__details, .sb-dt-card .sb-dt-content .left .sb-dt-class-info .sb-dt-label, .sb-dt-card .sb-dt-content .left .sb-dt-source .sb-user, .sb-dt-source .sb-user {
     color: #ffffff !important;
   }
 
@@ -1416,6 +1416,64 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   ::placeholder, :-ms-input-placeholder,::-ms-input-placeholder,::-ms-placeholder, ::-webkit-input-placeholder, ::-moz-placeholder {
     color: #555;
   }
+  //QUML Darkmode styles
+  .quml-option, .quml-mcq-option-card {
+		background-color: #222222;
+		border: .0625rem solid #222;
+	}
+	.lanscape-mode-right ul .showFeedBack-progressBar .active, .lanscape-mode-right ul .showFeedBack-progressBar.att-color, .lanscape-mode-right ul .showFeedBack-progressBar.progressBar-border{
+		color: var(--black) !important;
+	}
+	.quml-mcq p, .quml-mcq span, .quml-sa p, .quml-sa span, .startpage__instr-desc p, .startpage__instr-desc span, quml-mcq-solutions p, quml-mcq-solutions span, quml-sa p, quml-sa span{
+		color: var(--white);
+	}
+	.player-endpage__right-panel .title-section .title{
+		color: var(--white) !important;
+	}
+	.replay-section div svg g path{
+		fill: var(--white);
+	}
+  .replay-section div svg g path:first-child {
+		fill: transparent;
+	}
+  .scoreboard__index.unattempted{
+		color: #fff;
+    	border: 0.03125rem solid #fff;
+	}
+	.main-container{
+		background: #333;
+	}
+	.quml-navigation__next--active::after, .quml-navigation__next:hover::after, .quml-navigation__previous--active::after, .quml-navigation__previous:hover::after {
+		border-color: #000;
+	}
+	.quml-option--selected {
+		border: .125rem solid var(--primary-color);
+	}
+  .know-more-form label {
+    color:#fff;
+  }
+  .remaining-length,:not(.normalize) .multi-select-container .list-border .placeholder,.select-text.select-placeholder, .alert-message.sc-ion-alert-md, .alert-input-group.sc-ion-alert-md, .sb--card--course .sb--card__meta1,.settings-item-style,.sc-ion-label-ios-s>p,.placeholder {
+    opacity: 1;
+    color: #fff;
+  }
+  input.native-input::placeholder,input.native-input.sc-ion-input-md::placeholder,textarea.native-textarea.sc-ion-textarea-md::placeholder,textarea.native-textarea::placeholder,.select-placeholder,textarea#knowMoreMsg::placeholder,textarea::placeholder,.sb-textarea::placeholder,.placeholder::placeholder {
+    color: #fff;opacity: 0.75;
+  }
+  
+  sb-form sb-multiple-dropdown .multi-select-container ul span {
+    color:#fff;
+  }
+  :not(.normalize) .checkmark{
+    border-color: #fff;
+  }
+  :not(.normalize) .container .checkmark:after {
+    border-color: #000;
+  }
+  .content-preferences-info {background:#000;}
+.grid-container {background: #333;
+  border: 0;
+  color: #fff;}
+  .info-title {color:#fff;}
 }
 
 // accessbility changes
@@ -1436,10 +1494,10 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
 $gray-400: lighten($gray, 8%); // sub heading #666666
 
   .select-text.select-placeholder, .alert-message.sc-ion-alert-md, .alert-input-group.sc-ion-alert-md {
-    color: #555555;
+    color: #fff;
   }
   .sc-ion-label-ios-s>p {
-    color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.75);
+    color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.25);
   }
 
   app-district-mapping .btn-info {
@@ -2282,50 +2340,16 @@ html[device-accessable-theme="accessible"][data-mode="DARKMODE"] {
   --color-dark-black: #fff !important;
   --color-panther: #999 !important;
   --color-gray34: #999 !important;
-}
-html[data-mode="DARKMODE"] {
-  .quml-option, .quml-mcq-option-card {
-		background-color: #222222;
-		border: .0625rem solid #222;
-	}
-	.lanscape-mode-right ul .showFeedBack-progressBar .active, .lanscape-mode-right ul .showFeedBack-progressBar.att-color, .lanscape-mode-right ul .showFeedBack-progressBar.progressBar-border{
-		color: var(--black) !important;
-	}
-	.quml-mcq p, .quml-mcq span, .quml-sa p, .quml-sa span, .startpage__instr-desc p, .startpage__instr-desc span, quml-mcq-solutions p, quml-mcq-solutions span, quml-sa p, quml-sa span{
-		color: var(--white);
-	}
-	.player-endpage__right-panel .title-section .title{
-		color: var(--white) !important;
-	}
-	.replay-section div svg g path{
-		fill: var(--white);
-	}
-  .replay-section div svg g path:first-child {
-		fill: transparent;
-	}
-	.quml-navigation__next--active::after, .quml-navigation__next:hover::after, .quml-navigation__previous--active::after, .quml-navigation__previous:hover::after {
-		border-color: #000;
-	}
-	.quml-option--selected {
-		border: .125rem solid var(--primary-color);
-	}
-  .know-more-form label {
-    color:#fff;
-  }
-  .remaining-length,:not(.normalize) .multi-select-container .list-border .placeholder,.select-text.select-placeholder, .alert-message.sc-ion-alert-md, .alert-input-group.sc-ion-alert-md, .sb--card--course .sb--card__meta1,.settings-item-style,.sc-ion-label-ios-s>p,.placeholder {
-    opacity: 1;
+  --app-primary:#ffd92a !important;
+  --app-medium-gray:#fff;
+  --app-light-gray:#fff;
+  $red: #AD0011;
+  $gray-300: #fff; // sub heading 2 #969696
+  $gray-400: #fff; // sub heading #666666
+  .select-text.select-placeholder, .alert-message.sc-ion-alert-md, .alert-input-group.sc-ion-alert-md {
     color: #fff;
   }
-  input.native-input::placeholder,input.native-input.sc-ion-input-md::placeholder,textarea.native-textarea.sc-ion-textarea-md::placeholder,textarea.native-textarea::placeholder,.select-placeholder,textarea#knowMoreMsg::placeholder,textarea::placeholder,.sb-textarea::placeholder,.placeholder::placeholder {
-    color: #fff;opacity: 0.75;
-  }
-  sb-form sb-multiple-dropdown .multi-select-container ul span {
-    color:#fff;
-  }
-  :not(.normalize) .checkmark{
-    border-color: #fff;
-  }
-  :not(.normalize) .container .checkmark:after {
-    border-color: #000;
+  .sc-ion-label-ios-s>p {
+    color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.25);
   }
 }
