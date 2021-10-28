@@ -764,7 +764,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .sb-popover-content,
   app-profile .contacts .phone .value,
   .content-share .share-desc,
-  .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info,sb-form sb-multiple-dropdown .multi-select-container ul span {
+  .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info,sb-form sb-multiple-dropdown .multi-select-container ul span, .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info,sb-form sb-multiple-dropdown .multi-select-container ul span,.sb--card__details, .sb-dt-card .sb-dt-content .left .sb-dt-class-info .sb-dt-label, .sb-dt-card .sb-dt-content .left .sb-dt-source .sb-user, .sb-dt-source .sb-user {
     color: #ffffff !important;
   }
 
@@ -1459,6 +1459,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   input.native-input::placeholder,input.native-input.sc-ion-input-md::placeholder,textarea.native-textarea.sc-ion-textarea-md::placeholder,textarea.native-textarea::placeholder,.select-placeholder,textarea#knowMoreMsg::placeholder,textarea::placeholder,.sb-textarea::placeholder,.placeholder::placeholder {
     color: #fff;opacity: 0.75;
   }
+  
   sb-form sb-multiple-dropdown .multi-select-container ul span {
     color:#fff;
   }
@@ -1468,6 +1469,11 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   :not(.normalize) .container .checkmark:after {
     border-color: #000;
   }
+  .content-preferences-info {background:#000;}
+.grid-container {background: #333;
+  border: 0;
+  color: #fff;}
+  .info-title {color:#fff;}
 }
 
 // accessbility changes
@@ -1488,10 +1494,10 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
 $gray-400: lighten($gray, 8%); // sub heading #666666
 
   .select-text.select-placeholder, .alert-message.sc-ion-alert-md, .alert-input-group.sc-ion-alert-md {
-    color: #555555;
+    color: #fff;
   }
   .sc-ion-label-ios-s>p {
-    color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.75);
+    color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.25);
   }
 
   app-district-mapping .btn-info {
@@ -2334,4 +2340,16 @@ html[device-accessable-theme="accessible"][data-mode="DARKMODE"] {
   --color-dark-black: #fff !important;
   --color-panther: #999 !important;
   --color-gray34: #999 !important;
+  --app-primary:#ffd92a !important;
+  --app-medium-gray:#fff;
+  --app-light-gray:#fff;
+  $red: #AD0011;
+  $gray-300: #fff; // sub heading 2 #969696
+  $gray-400: #fff; // sub heading #666666
+  .select-text.select-placeholder, .alert-message.sc-ion-alert-md, .alert-input-group.sc-ion-alert-md {
+    color: #fff;
+  }
+  .sc-ion-label-ios-s>p {
+    color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.25);
+  }
 }
