@@ -272,6 +272,13 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
     color: #fff;
   }
 
+  .player-endpage {
+		background-color: #333 !important;
+	}
+  .replay-section {background-color: #222 !important;}
+  .player-endpage__right-panel .user-options{
+		filter: invert(1);
+	}
   //.ui-container::part(scroll),
 
   .ion-padding.ion-no-border,
@@ -764,7 +771,7 @@ html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .sb-popover-content,
   app-profile .contacts .phone .value,
   .content-share .share-desc,
-  .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info,sb-form sb-multiple-dropdown .multi-select-container ul span, .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info,sb-form sb-multiple-dropdown .multi-select-container ul span,.sb--card__details, .sb-dt-card .sb-dt-content .left .sb-dt-class-info .sb-dt-label, .sb-dt-card .sb-dt-content .left .sb-dt-source .sb-user, .sb-dt-source .sb-user {
+  .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info,sb-form sb-multiple-dropdown .multi-select-container ul span, .sb-popover .sb-popover-container .sb-popover-items .sb-popover-content-details .main-title .meta-info,sb-form sb-multiple-dropdown .multi-select-container ul span,.sb--card__details, .sb-dt-card .sb-dt-content .left .sb-dt-class-info .sb-dt-label, .sb-dt-card .sb-dt-content .left .sb-dt-source .sb-user, .sb-dt-source .sb-user,.player-endpage__right-panel .title-section .title, .player-endpage__right-panel .title-section span, .player-endpage__right-panel .next {
     color: #ffffff !important;
   }
 
