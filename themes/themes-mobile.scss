@@ -1500,9 +1500,6 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
   $gray-300: lighten($gray, 12%); // sub heading 2 #969696
 $gray-400: lighten($gray, 8%); // sub heading #666666
 
-  .select-text.select-placeholder, .alert-message.sc-ion-alert-md, .alert-input-group.sc-ion-alert-md {
-    color: #fff;
-  }
   .sc-ion-label-ios-s>p {
     color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.25);
   }
@@ -2353,6 +2350,7 @@ html[device-accessable-theme="accessible"][data-mode="DARKMODE"] {
   $red: #AD0011;
   $gray-300: #fff; // sub heading 2 #969696
   $gray-400: #fff; // sub heading #666666
+
   .select-text.select-placeholder, .alert-message.sc-ion-alert-md, .alert-input-group.sc-ion-alert-md {
     color: #fff;
   }
