@@ -1069,6 +1069,9 @@ html[layout='joy'] {
 			margin-bottom: calculateRem(16px);
 		}
 	}
+	.side-toc-content.chapter-box {
+		box-shadow: none;
+	}
 
 	// Assesment Player
 
