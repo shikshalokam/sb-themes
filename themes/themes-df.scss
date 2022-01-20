@@ -4,13 +4,7 @@
 html[layout="joy"] {
   --primary-hs: 210, 97%; // template primary color // #024f9d
   --primary: hsl(var(--primary-hs), 31%);  
-
-  --secondary-hs: 49, 100%; // #ffd829
-  --secondary: hsl(var(--secondary-hs), 58%);
-
-  // --df-card-bg:var(--secondary-100);
   --df-common-bg: var(--df-e9e8d9);
-  --df-body-bg: var(--secondary-0); // body bg #f3f3e5
 }
 
 // Green Theme
