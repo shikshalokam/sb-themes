@@ -823,7 +823,7 @@ html[layout='joy'] {
 
 	.content-video__player__details {
 		border-radius: 0 0 var(--sbt-bradius-24) var(--sbt-bradius-24);
-		background: none;
+		background: var(--sbt-body-bg2);
 	}
 
 	.sb-accordion-content,
@@ -1770,7 +1770,6 @@ html[data-theme=Darkmode] {
 	--quml-close-icon: #fff;
 
 
-
 	app-signup {
 		.sb-checkbox.sb-checkbox-primary label:before {
 			border-color: var(--primary-color);
@@ -2225,16 +2224,12 @@ html[data-theme=Darkmode] {
 	.cc-player__content-header {
 		background: #444444;
 	}
-
-	.content-video__player__details, .content-metadeta, .ui.styled.accordion, .ui.styled.accordion .accordion, .sb-accordion-content.sb-bg-color-white, .sb-groups-members-card {
-		background: #333 !important;
+	.content-video__player__details {
+		background: transparent !important;
 	}
 
-	.sb-toc-credits {
-		.sbaccordion__panel-header,
-		.sbaccordion__panel-content {
-			background: #333 !important;
-		}
+	 .content-metadeta, .ui.styled.accordion, .ui.styled.accordion .accordion, .sb-accordion-content.sb-bg-color-white, .sb-groups-members-card, .sb-toc-credits .sbaccordion__panel-header, .sb-toc-credits .sbaccordion__panel-content {
+		background: #333 !important;
 	}
 
 	.sb-back-header {
