@@ -241,6 +241,14 @@ html[data-theme=Darkmode][layout='old'] {
 	.content-header {
 		background-color: #222;
 	}
+
+	.sbt-back-header .content-header {
+		background-color: #444 !important;
+	}
+	
+    .sb-bg-color-white{
+		background-color: var(--sbt-compt-bg) !important;
+	}
 }
 
 html[data-theme='Default'][layout='joy'] {
@@ -661,7 +669,7 @@ html[layout='joy'] {
 	}
 
 	.sbt-back-header .content-header {
-		border-radius: 0px 0px calculateRem(24px) calculateRem(24px) !important;
+		border-radius: calculateRem(24px) !important;
 		padding: 0px calculateRem(16px);
 		position: relative;
 		z-index: 3;
@@ -1182,7 +1190,7 @@ html[layout='joy'] {
 	}
 
 	.sb-pageSection-header {
-		margin: 8px 0 0px 0;
+		margin: 0.5rem 0 0px 0;
 	}
 
 	.sb-content__bar {
@@ -1407,7 +1415,9 @@ html[layout='joy'] {
 		}
 	}
 
-
+	table.dataTable.no-footer {
+		border-radius: var(--sbt-bradius-24);
+     }	
 }
 
 html[data-theme=Darkmode] {
@@ -2726,6 +2736,22 @@ html[data-theme=Darkmode] {
 
 		.btn {
 			color: var(--gray);
+		}
+	}
+
+	table.dataTable.no-footer{
+		background: var(--primary);
+		border: 1px solid var(--black);
+		thead th{
+			background-color: var(--primary) !important;
+			color: var(--black);
+		}
+		tbody tr {
+			background-color: #444;
+			color: var(--white);
+			&:nth-child(odd) {
+				background-color: #333 !important;
+			}
 		}
 	}
 }
