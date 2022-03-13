@@ -35,6 +35,10 @@ html[data-theme='Default'] {
     --mat-accordion-tabs-label-after-bg: var(--gray-100);
     --mat-accordion-tabs-label-active-after-bg: var(--white);
 
+    // Datepicker
+    --mat-datepicker-form-bg: var(--white);
+    --mat-calender-bg: var(--white);
+
     .sb-mat {
         &__accordion.mat-accordion {
             .mat-expansion-panel {
@@ -106,6 +110,10 @@ html[data-theme=Darkmode] {
     --mat-accordion-tabs-label-after-bg: var(--gray-100);
     --mat-accordion-tabs-label-active-after-bg: #222;
 
+    // Datepicker
+    --mat-datepicker-form-bg: #222;
+    --mat-calender-bg: #222;
+
     // Material Tabs
     .mat-tab__usage-report,
     mat-tab-group {
@@ -113,6 +121,10 @@ html[data-theme=Darkmode] {
             filter: invert(1);
         }
     }
+
+    //   .sb-mat__datepicker .mat-datepicker-toggle-default-icon {
+    //     filter: invert(1);
+    //   }
 }
 
 html[data-theme='Darkmode'][layout='joy'] {}
@@ -297,4 +309,55 @@ mat-tab-group.sb-mat__tab {
         }
     }
 
+}
+
+// Date picker
+
+.sb-mat__datepicker {
+    &.mat-form-field-appearance-fill {
+        .mat-form-field-flex {
+            padding: 0;
+            flex-direction: row-reverse;
+            border-radius: 4px;
+            align-items: center;
+            background-color: var(--mat-datepicker-form-bg);
+            border: 1px solid var(--gray-200);
+
+            html[layout='joy'] & {
+                border-radius: 24px;
+            }
+        }
+
+        .mat-form-field-infix {
+            padding: 0;
+            border-top: none;
+        }
+
+        .mat-form-field-underline {
+            display: none;
+        }
+    }
+}
+
+.mat-datepicker-content .mat-calendar {
+    background-color: var(--mat-calender-bg);
+    color: var(--gray-800);
+}
+
+// Active text of calender open
+.mat-datepicker-toggle,
+.mat-datepicker-content .mat-calendar-next-button,
+.mat-datepicker-content .mat-calendar-previous-button,
+.mat-calendar-table-header,
+.mat-calendar-body-cell-content,
+.mat-date-range-input-separator,
+.mat-calendar-body-label,
+.mat-calendar-arrow {
+    color: var(--gray-800);
+}
+
+// Disabled text of calender open
+.mat-icon-button.mat-button-disabled.mat-button-disabled,
+.mat-calendar-body-disabled>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+    color: var(--gray-200);
 }
