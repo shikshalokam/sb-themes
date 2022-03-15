@@ -177,8 +177,6 @@ html[data-theme='Default'] {
 	--grey-nuance-darker: #dddddd;
 	--fade-grey: #e8e8e8;
 
-	// accordion
-	--sb-mat-accordion-bg: #fff;
 	//cc
 	--cc-sbcard-type-bg: var(--black);
 	--cc-sbcard-type-br: var(--black);
@@ -265,8 +263,6 @@ html[data-theme='Default'][layout='joy'] {
 	--cc-grade-pill-container-bg: #e9e8d8;
 	--sbfaq-compt-bg: #e9e8d9;
 
-	// accordion
-	--sb-mat-accordion-bg: var(--sbfaq-compt-bg);
 	app-signup {
 		.sb-checkbox.sb-checkbox-primary label:before {
 			border-color: #004E8A;
@@ -287,7 +283,6 @@ html[layout='joy'] {
 	--sbt-language-dropdown-item-hover-bg: rgba(0, 0, 0, .05);
 	--sbt-language-dropdown-item-hover-text: #008840;
 	--sb-profile-bg-c-4: var(--sbt-body-bg);
-	--sb-mat-accordion-bradius:1.5rem;
 	--sbt-bradius: 0.125rem;
 	--sbt-bradius-8: calc(var(--sbt-bradius) * 4);
 	--sbt-bradius-16: calc(var(--sbt-bradius) * 8);
@@ -302,9 +297,6 @@ html[layout='joy'] {
 	--sb-sidebar-menu-border-bg: #024f9d;
 	--sb-sidebar-menu-text: #333;
 	--sb-graph-section-bg: var(--sbt-body-bg2);
-
-	// accordion
-	--sb-mat-accordion-bg: var(--sbt-body-bg);
 
 	.profile-bg-c-3 {
     border-radius: 2rem;
@@ -1494,9 +1486,6 @@ html[data-theme=Darkmode] {
 	--sbt-all-text: var(--sbt-all);
 	--sbt-all-bg: var(--sbt-all);
 	--sbfield-label-text: var(--gray-100);
-
-	// accordion
-	--sb-mat-accordion-bg: var(--sbt-body-bg2);
 
 	// new styles
 	--sbt-badge-bg: #222222;
