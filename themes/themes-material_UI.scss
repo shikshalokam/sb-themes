@@ -37,7 +37,8 @@ html[data-theme='Default'] {
 
     // Datepicker
     --mat-datepicker-form-bg: var(--white);
-    --mat-calender-bg: var(--white);
+    --mat-datepicker-calender-bg: var(--white);
+    --mat-datepicker-calender-body-selected-txt: var(--white);
 
     .sb-mat {
         &__accordion.mat-accordion {
@@ -112,8 +113,8 @@ html[data-theme=Darkmode] {
 
     // Datepicker
     --mat-datepicker-form-bg: #222;
-    --mat-calender-bg: #222;
-
+    --mat-datepicker-calender-bg: #222;
+    --mat-datepicker-calender-body-selected-txt: var(--gray);
     // Material Tabs
     .mat-tab__usage-report,
     mat-tab-group {
@@ -122,9 +123,9 @@ html[data-theme=Darkmode] {
         }
     }
 
-    //   .sb-mat__datepicker .mat-datepicker-toggle-default-icon {
-    //     filter: invert(1);
-    //   }
+    .mat-calendar-arrow {
+        filter: invert(1);
+    }
 }
 
 html[data-theme='Darkmode'][layout='joy'] {}
@@ -340,8 +341,16 @@ mat-tab-group.sb-mat__tab {
 }
 
 .mat-datepicker-content .mat-calendar {
-    background-color: var(--mat-calender-bg);
+    background-color: var(--mat-datepicker-calender-bg);
     color: var(--gray-800);
+    border: 1px solid var(--gray-200);
+    border-radius: 4px;
+}
+
+.mat-calendar-body-cell-content.mat-calendar-body-selected {
+    background-color: var(--primary-color);
+    color: var(--mat-datepicker-calender-body-selected-txt);
+    box-shadow: none;
 }
 
 // Active text of calender open
