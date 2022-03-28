@@ -236,16 +236,12 @@ html[data-theme=Darkmode][layout='old'] {
 		background-color: var(--black) !important;
 	}
 
-	.content-header {
-		background-color: #222;
-	}
-
 	.sbt-back-header .content-header {
 		background-color: #444 !important;
 	}
 	
     .sb-bg-color-white{
-		background-color: var(--sbt-compt-bg) !important;
+		background-color: #333 !important;
 	}
 }
 
@@ -1409,7 +1405,11 @@ html[layout='joy'] {
 
 	table.dataTable.no-footer {
 		border-radius: var(--sbt-bradius-24);
-     }	
+     }
+	 
+	 .sb-forum-btn{
+		 height: 2rem !important;
+	 }
 }
 
 html[data-theme=Darkmode] {
@@ -2551,8 +2551,8 @@ html[data-theme=Darkmode] {
 		background: rgba(var(--rc-rgba-black), .8);
 	}
 
-	sui-multi-select.ui.selection.dropdown {
-		background: var(--sb-dropdown-menu-bg);
+	sui-multi-select.ui.selection.dropdown, sui-select.ui.selection.dropdown {
+		background: var(--sb-dropdown-menu-bg) !important;
 	}
 
 	.ui.selection.dropdown .menu>.item {
@@ -2914,7 +2914,6 @@ html[accessable-theme="accessible"][layout='joy'][data-theme="Darkmode"] {
         color: var(--secondary-color);
     }
 }
-
 
 html[accessable-theme="accessible"] {
 
