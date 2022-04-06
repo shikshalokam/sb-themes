@@ -324,7 +324,6 @@ mat-tooltip-component .mat-tooltip {
         background-color: transparent;
         box-shadow: none;
         position: relative;
-        outline: none !important;
 
         .mat-dialog-content {
             margin: 0;
@@ -470,6 +469,7 @@ mat-tooltip-component .mat-tooltip {
         &.mat-form-field {
             width: 100%;
         }
+
         .mat-form-field-flex {
             border-radius: 4px;
             padding: 8px 16px;
@@ -486,34 +486,43 @@ mat-tooltip-component .mat-tooltip {
                 html[layout='joy'] & {
                     border-color: #ccc;
                 }
+
                 cursor: pointer;
             }
         }
+
         .mat-form-field-infix {
             padding: 0;
             border-top: none;
             width: 100%;
+
             .mat-select {
                 font-size: 12px;
             }
         }
+
         .mat-select-arrow-wrapper {
             transform: unset;
+
             .mat-select-arrow {
                 color: var(--primary-color);
             }
         }
+
         .mat-form-field-underline {
             display: none;
         }
+
         .mat-select-value-text {
             color: var(--primary-color);
             font-weight: bold;
         }
+
         .mat-form-field-wrapper {
             padding-bottom: 0;
         }
     }
+
     // Language Dropdown
     &--language {
         &.mat-form-field-appearance-fill .mat-form-field-flex {
@@ -521,13 +530,15 @@ mat-tooltip-component .mat-tooltip {
             align-items: center;
             box-shadow: var(--sbt-box-shadow-6px);
 
-            .mat-select-arrow-wrapper .mat-select-arrow, .mat-select-value-text {
+            .mat-select-arrow-wrapper .mat-select-arrow,
+            .mat-select-value-text {
                 color: var(--secondary-color);
-            } 
+            }
 
             .mat-select-value-text span {
                 display: flex;
                 align-items: center;
+
                 &::before {
                     content: "";
                     background: url(/assets/images/Language.svg) no-repeat center !important;
@@ -547,6 +558,7 @@ mat-tooltip-component .mat-tooltip {
                     font-size: 16px;
                 }
             }
+
             .mat-select-trigger {
                 height: 22px;
             }
@@ -556,22 +568,51 @@ mat-tooltip-component .mat-tooltip {
 
 .mat-select-panel {
     background: var(--mat-dropdown-form-bg);
-    html[layout='joy'] & { 
+
+    html[layout='joy'] & {
         border-radius: 24px;
     }
+
     &.mat-primary {
         .mat-option.mat-selected:not(.mat-option-disabled) {
-            color: var(--primary-color);
+            color: var(--secondary-color);
             font-weight: bold;
+
+            &.mat-dropdown__options {
+                span {
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        top: 50%;
+                        transform: rotate(45deg) translateY(-50%);
+                        height: calculateRem(12px);
+                        width: calculateRem(6px);
+                        position: absolute;
+                        right: calculateRem(16px);
+                        border-bottom: calculateRem(2px) solid var(--secondary-color);
+                        border-right: calculateRem(2px) solid var(--secondary-color);
+
+                        html[dir="rtl"] & {
+                            left: calculateRem(24px);
+                            right: inherit;
+                        }
+                    }
+                }
+            }
         }
     }
+
     .mat-option {
         color: var(--gray-800);
+
         &.mat-selected:not(.mat-option-multiple) {
             background-color: transparent;
         }
     }
 }
+
 /* Material Select ends here */
 
 
