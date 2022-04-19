@@ -464,104 +464,120 @@ mat-tooltip-component .mat-tooltip {
 
 
 /* Material Select starts here */
-.mat-dropdown {
+.sb-mat__dropdown {
     &.mat-form-field-appearance-fill {
-        &.mat-form-field {
-            width: 100%;
+        .mat-form-field-wrapper {
+            padding-bottom: 0;
         }
 
         .mat-form-field-flex {
-            border-radius: 4px;
-            padding: 8px 16px;
             background-color: var(--mat-dropdown-form-bg);
-            border: 1px solid #ccc;
-            min-width: 168px;
+            padding: 8px 12px 0 16px;
+            border: 1px solid var(--primary-color);
+            border-radius: 4px;
 
             html[layout='joy'] & {
                 border-radius: 24px;
                 border-color: transparent;
             }
-
-            &:hover {
-                html[layout='joy'] & {
-                    border-color: #ccc;
-                }
-
-                cursor: pointer;
-            }
         }
 
         .mat-form-field-infix {
-            padding: 0;
-            border-top: none;
-            width: 100%;
-
-            .mat-select {
-                font-size: 12px;
-            }
+            padding: 0 0 8px 0;
         }
 
-        .mat-select-arrow-wrapper {
-            transform: unset;
+        .mat-select-trigger {
+            height: 20px;
+        }
 
-            .mat-select-arrow {
-                color: var(--primary-color);
-            }
+        .mat-select-value {
+            font-weight: bold;
+        }
+
+        .mat-select-arrow,
+        .mat-select-value {
+            color: var(--primary-color);
+        }
+
+        .mat-form-field-label {
+            color: var(--gray-800);
+        }
+
+        .mat-select-arrow {
+            margin: 4px 4px 0 4px;
+        }
+
+        &.mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+            color: var(--primary-color);
+        }
+
+        &.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+            transform: translateY(-0.59373em) scale(0.7);
+            margin-bottom: 0;
         }
 
         .mat-form-field-underline {
             display: none;
         }
-
-        .mat-select-value-text {
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-
-        .mat-form-field-wrapper {
-            padding-bottom: 0;
-        }
     }
 
-    // Language Dropdown
-    &--language {
-        &.mat-form-field-appearance-fill .mat-form-field-flex {
-            min-height: 48px;
-            align-items: center;
-            box-shadow: var(--sbt-box-shadow-6px);
+    &--nolabel {
 
-            .mat-select-arrow-wrapper .mat-select-arrow,
-            .mat-select-value-text {
-                color: var(--secondary-color);
-            }
+        &.sb-mat__dropdown--language {
+            &.mat-form-field-appearance-fill {
 
-            .mat-select-value-text span {
-                display: flex;
-                align-items: center;
+                .mat-select-arrow,
+                .mat-select-value {
+                    color: var(--secondary-color);
+                }
 
-                &::before {
-                    content: "";
-                    background: url(/assets/images/Language.svg) no-repeat center !important;
-                    height: calculateRem(20px);
-                    width: calculateRem(20px);
-                    display: block;
-                    margin-right: calculateRem(8px);
+                .mat-select-value-text span {
+                    display: flex;
+                    align-items: center;
 
-                    html[dir="rtl"] & {
-                        margin-left: calculateRem(8px);
+                    &::before {
+                        content: "";
+                        background: url(/assets/images/Language.svg) no-repeat center !important;
+                        height: calculateRem(20px);
+                        width: calculateRem(20px);
+                        display: block;
+                        margin-right: calculateRem(8px);
+
+                        html[dir="rtl"] & {
+                            margin-left: calculateRem(8px);
+                        }
                     }
                 }
             }
+        }
+
+        &.mat-form-field-appearance-fill {
+
+            .mat-form-field-flex {
+                padding: 0 16px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                box-shadow: var(--sbt-box-shadow-6px);
+            }
 
             .mat-form-field-infix {
-                .mat-select {
-                    font-size: 16px;
-                }
+                border-top: none;
+                padding: 0;
             }
 
-            .mat-select-trigger {
-                height: 22px;
+            .mat-select {
+                font-size: 16px;
             }
+
+            .mat-select-arrow {
+                margin-top: 0;
+            }
+
+            .mat-select-arrow-wrapper {
+                transform: unset;
+            }
+
         }
     }
 }
