@@ -23,7 +23,8 @@ jobs:
       - run: 
           command: |-
               if [ -z $CIRCLE_PR_NUMBER ]; then
-               npm publish project-sunbird-sb-themes-*
+               echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+               npm publish
               fi
           name: "Publish to NPM"
 version: 2.1
