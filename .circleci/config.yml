@@ -23,7 +23,7 @@ jobs:
       - run: 
           command: |-
               if [ -z $CIRCLE_PR_NUMBER ]; then
-               npm publish
+               npm publish project-sunbird-sb-themes-*
               fi
           name: "Publish to NPM"
 version: 2.1
