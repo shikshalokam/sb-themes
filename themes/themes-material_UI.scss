@@ -258,6 +258,7 @@ mat-tooltip-component .mat-tooltip {
             align-items: center;
             background-color: var(--mat-datepicker-form-bg);
             border: 1px solid var(--gray-200);
+            height: 3rem;
 
             html[layout='joy'] & {
                 border-radius: 24px;
@@ -265,8 +266,17 @@ mat-tooltip-component .mat-tooltip {
         }
 
         .mat-form-field-infix {
-            padding: 0;
-            border-top: none;
+            padding: .25em 0 .25em;
+        }
+
+        // Datepicker form without label
+        &.sb-mat__datepicker--nolabel {
+            .mat-form-field-flex { 
+                height: auto;
+            }
+            .mat-form-field-infix {
+                border-top: none;
+            }
         }
 
         .mat-form-field-underline {
@@ -591,7 +601,7 @@ mat-tooltip-component .mat-tooltip {
 
     &.mat-primary {
         .mat-option.mat-selected:not(.mat-option-disabled) {
-            color: var(--secondary-color);
+            color: var(--primary-color);
             font-weight: bold;
 
             &.mat-dropdown__options {
@@ -607,13 +617,20 @@ mat-tooltip-component .mat-tooltip {
                         width: calculateRem(6px);
                         position: absolute;
                         right: calculateRem(16px);
-                        border-bottom: calculateRem(2px) solid var(--secondary-color);
-                        border-right: calculateRem(2px) solid var(--secondary-color);
+                        border-bottom: calculateRem(2px) solid var(--primary-color);
+                        border-right: calculateRem(2px) solid var(--primary-color);
 
                         html[dir="rtl"] & {
                             left: calculateRem(24px);
                             right: inherit;
                         }
+                    }
+                }
+                &.mat-dropdown__options--language {
+                    color: var(--secondary-color);
+                    span::before {
+                        border-bottom-color: var(--secondary-color);
+                        border-right-color: var(--secondary-color);
                     }
                 }
             }
