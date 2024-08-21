@@ -247,7 +247,7 @@ html[data-theme=Darkmode][layout='old'] {
 
 html[data-theme='Default'][layout='joy'] {
 	--primary-hs: 206, 100%;
-	--primary-color: #024F9D;
+	--primary-color: #001380;
 	--primary-300: #74B9EB;
 	--primary-200: #AFCCE1;
 	--primary-800: hsl(var(--primary-hs), 40%);
@@ -267,7 +267,7 @@ html[data-theme='Default'][layout='joy'] {
 }
 
 html[layout='joy'] {
-	--primary-theme: #FFD954;
+	--primary-theme: #9EC5E8;
 	--sbt-header-bg: var(--primary-theme);
 	--sbt-body-bg: #e9e8d9;
 	--sbt-body-bg2: #f3f3e5;
